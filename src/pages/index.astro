@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import mainImage from '../assets/main/top-banner.png';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="Welcome to Astro">
+	<div>
+		<h1 class="text-[40px] font-semibold py-12 leading-[32px]">Путь пациента</h1>
+		<h2 class="text-[20px] font-semibold leading-[24px]">Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше узнать особенности пути онкопациента в Беларуси – начиная от постановки диагноза и заканчивая качеством твоей жизни в ремиссии</h2>
+		<img src={mainImage.src} alt="Путь пациента" class="w-full h-auto py-8" />
+	</div>
+	<ul class="text-[14px] leading-[18px] text-center">
+		<li class="mb-8">Мы постарались собрать всю необходимую информацию <b>структурировано и кратко</b>, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.</li>
+		<li class="mb-8">Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь, показать тебе, что ты не одна и дать подсказки, что тебя ждет и как можно избежать негативных последствий болезни.</li>
+		<li>И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению в 94% случаев!</li>
+	</ul>
+	<ul>
+		<li>
+			<a href="/postanovka-diagnoza">
+				<img />
+				<p>Постановка<br/>диагноза</p>
+			</a>
+		</li>
+		<li>
+			<a href="/postanovka-diagnoza">
+				<img />
+				<p>Операция<br/> и лечение</p>
+			</a>
+		</li>
+		<li>
+			<a href="/postanovka-diagnoza">
+				<img />
+				<p>Жизнь после<br/> и ремиссия</p>
+			</a>
+		</li>
+	</ul>
+	<p>Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы. Истории женщин о принятии, мотивации и жизни после болезни в этом видео.</p>
+</Layout>

@@ -1,0 +1,13 @@
+---
+const {href, title} = Astro.props
+---
+<a href={href} title={title} class="p-1 relative hover:after:opacity-100 after:opacity-0 after:absolute after:w-full after:h-full after:left-0 after:transition-all after:border-0 after:border-black after:shadow-inner" role="menuitem">{title}</a>
+
+<!-- left: 0;
+    bottom: 20%;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0px solid #000000;
+    box-shadow: inset 0px -1px 0px 0px #000000;
+    transition: all 0.3s ease;
+} -->
