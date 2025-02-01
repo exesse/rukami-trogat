@@ -1,41 +1,246 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import mainImage from '../assets/main/top-banner.png';
+import Layout from "../layouts/Layout.astro";
+import Divider from "../components/Divider.astro";
+
+import mainImage from "../assets/main/top-banner.png";
+import diagnozImage from "../assets/main/diagnoz.png";
+import operacijaImage from "../assets/main/operacija.webp";
+import remissijaImage from "../assets/main/remissija.webp";
+import ArrowImage from "../assets/main/arrow.svg";
+import Questions from "../assets/main/questions.svg";
+import Dropdown from "../components/Dropdown.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title="Welcome to Astro">
-	<div>
-		<h1 class="text-[40px] font-semibold py-12 leading-[32px]">Путь пациента</h1>
-		<h2 class="text-[20px] font-semibold leading-[24px]">Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше узнать особенности пути онкопациента в Беларуси – начиная от постановки диагноза и заканчивая качеством твоей жизни в ремиссии</h2>
-		<img src={mainImage.src} alt="Путь пациента" class="w-full h-auto py-8" />
-	</div>
-	<ul class="text-[14px] leading-[18px] text-center">
-		<li class="mb-8">Мы постарались собрать всю необходимую информацию <b>структурировано и кратко</b>, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.</li>
-		<li class="mb-8">Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь, показать тебе, что ты не одна и дать подсказки, что тебя ждет и как можно избежать негативных последствий болезни.</li>
-		<li>И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению в 94% случаев!</li>
-	</ul>
-	<ul>
-		<li>
-			<a href="/postanovka-diagnoza">
-				<img />
-				<p>Постановка<br/>диагноза</p>
-			</a>
-		</li>
-		<li>
-			<a href="/postanovka-diagnoza">
-				<img />
-				<p>Операция<br/> и лечение</p>
-			</a>
-		</li>
-		<li>
-			<a href="/postanovka-diagnoza">
-				<img />
-				<p>Жизнь после<br/> и ремиссия</p>
-			</a>
-		</li>
-	</ul>
-	<p>Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы. Истории женщин о принятии, мотивации и жизни после болезни в этом видео.</p>
+<Layout title="Путь пациента">
+  <div class="pt-12 pb-6 lg:flex lg:items-center">
+    <div class="lg:w-[50%] lg:pr-10">
+      <h1
+        class="text-[40px] mb-12 font-semibold leading-[32px] lg:text-[70px] lg:leading-[56px] lg:text-center xl:text-[80px] xl:leading-[64px] 2xl:text-[120px] 2xl:leading-[90px]"
+      >
+        Путь пациента
+      </h1>
+      <h2 class="text-[20px] font-semibold leading-[24px] lg:text-center">
+        Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше
+        узнать особенности пути онкопациента в Беларуси – начиная от постановки
+        диагноза и заканчивая качеством твоей жизни в ремиссии
+      </h2>
+      <img
+        src={ArrowImage.src}
+        class="hidden lg:block m-auto mt-10"
+        alt="Стрелка вниз"
+      />
+    </div>
+    <div class="lg:w-[50%]">
+      <img
+        src={mainImage.src}
+        alt="Путь пациента"
+        class="w-full h-auto pt-8 lg:py-0"
+      />
+    </div>
+  </div>
+  <ul
+    class="text-[14px] leading-[18px] text-center py-6 sm:text-[18px] sm:leading-[24px] lg:text-left lg:flex lg:gap-5 lg:py-14 xl:text-[20px] xl:leading-[26px] xl:gap-10 xl:py-20"
+  >
+    <li class="mb-8">
+      Мы постарались собрать всю необходимую информацию <b
+        >структурировано и кратко</b
+      >, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.
+    </li>
+    <li class="mb-8">
+      Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь, показать
+      тебе, что ты не одна и дать подсказки, что тебя ждет и как можно избежать негативных
+      последствий болезни.
+    </li>
+    <li>
+      И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества
+      жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению
+      в 94% случаев!
+    </li>
+  </ul>
+  <ul class="py-6">
+    <li class="bg-[#f7dac9] rounded-[30px] p-7 mb-5">
+      <a href="/postanovka-diagnoza">
+        <img src={diagnozImage.src} alt="Постановка диагноза" class="mb-10" />
+        <p class="text-[30px] font-semibold leading-[30px]">
+          Постановка<br />диагноза
+        </p>
+      </a>
+    </li>
+    <li class="bg-[#d2c5bc] rounded-[30px] p-7 mb-5">
+      <a href="/operacija-i-lecheie">
+        <img src={operacijaImage.src} alt="Операция и лечение" class="mb-10" />
+        <p class="text-[30px] font-semibold leading-[30px]">
+          Операция<br /> и лечение
+        </p>
+      </a>
+    </li>
+    <li class="bg-[#e1d2e1] rounded-[30px] p-7">
+      <a href="/zhizn-posle-remissija">
+        <img
+          src={remissijaImage.src}
+          alt="Жизнь после и ремиссия"
+          class="mb-10"
+        />
+        <p class="text-[30px] font-semibold leading-[30px]">
+          Жизнь после<br /> и ремиссия
+        </p>
+      </a>
+    </li>
+  </ul>
+  <Divider />
+  <p class="py-6 text-[24px] leading-[30px] font-semibold">
+    Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы.
+    Истории женщин о принятии, мотивации и жизни после болезни в этом видео.
+  </p>
+  <div class="py-6 rounded-[30px] overflow-hidden h-[180px]">
+    <iframe
+      class="w-full"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/dfhXN4kO2Uk?si=zkRwHwHiErCg1YdK"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+  <Divider />
+  <div>
+    <img src={Questions.src} alt="Вопросы" class="m-auto mt-10 mb-6" />
+  </div>
+  <!-- <Dropdown
+    items={[
+      {
+        title: 'О проекте "Руками трогать"',
+        description: (
+          <div>
+            <p>
+              Руками трогать – это инициатива, популяризирующая регулярное
+              обследование, как метод профилактики и раннего выявления рака
+              молочной железы.
+            </p>
+            <p>
+              Создана в Минске в 2015 году и объединяет женское онко-сообщество,
+              медиков и неравнодушных специалистов креативных индустрий.
+            </p>
+            <p>
+              Проект «Руками трогать» родился из сухой официальной статистики и
+              живых историй, помноженных на желание и необходимость
+              сфокусировать общественное внимание на проблеме онкологии в
+              Беларуси. Кроме того, несмотря на всю серьезность проблемы, нам
+              захотелось сделать полезный проект, чтобы рассказать о диагностике
+              и профилактике, научить как правильно ее делать, побудить чаще
+              ходить к специалистам.
+            </p>
+            <p>
+              «Руками не трогать!» — данный запрет встречается в жизни довольно
+              часто. Но диагностика рака молочной железы – это тот самый случай,
+              когда трогать руками не только можно, но и НУЖНО! И чем чаще, тем
+              лучше.
+            </p>
+            <p>
+              Ежегодно в рамках "Розового октября" – месяца борьбы с раком
+              молочной железы, мы проводим информационные и pr-кампании по
+              раннему выявлению РМЖ, выставки, мероприятия и специальные проекты
+              с клиниками Беларуси.
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: 'Кто составлял "Путь пациента"',
+        description: (
+          <div>
+            <p>
+              Идея собрать всю необходимую информацию и подать ее именно с точки
+              зрения пациента появилась после того, как в аккаунт "Руками
+              трогать" начали обращаться женщины, которые узнали о РМЖ и не
+              знали, что им дальше делать, ведь мы не готовы к болезни и не
+              знаем многих особенностей пути, пока сами не столкнемся с
+              диагнозом.
+            </p>
+            <p>
+              Мы собрали ответы на часто задаваемые вопросы и структурировали их
+              в соответствии с этапами течения болезни и ремиссии.
+            </p>
+            <p>
+              Материалы подготовлены командой проекта Руками трогать при помощи
+              сервиса искусственного интеллекта ChatGPT, выверены врачами, часть
+              материалов была написана самими онко-пациентами, прошедшими этот
+              путь и находящимися в ремиссии.
+            </p>
+            <p>
+              Благодарим за помощь в создании всех, кто принимал участие – от
+              наших подписчиков до дизайнеров!
+            </p>
+          </div>
+        ),
+      },
+      {
+        title: "Что еще мы делаем",
+        description: (
+          <div>
+            <div>
+              <p>Мы стараемся развивать проект в двух направлениях:</p>
+              <ul>
+                <li>
+                  информирование женщин о ранней диагностике, как об эффективном
+                  методе борьбы с раком
+                </li>
+                <li>
+                  помощь и поддержка онко-пациентам, проходящим лечение прямо
+                  сейчас
+                </li>
+              </ul>
+            </div>
+            <p>
+              Мы создаем креативные идеи социальных информационных и
+              pr-кампаний, снимаем контент и пишем тексты. Например,
+              #НеЗабудьПроГрудь #ВпередиРакаГруди. Ищем нестандартные каналы
+              коммуникации, чтобы доносить идею ранней диагностики до широкой
+              аудитории женщин.
+            </p>
+            <p>
+              Проводим благотворительные арт-аукционы в поддержку онко-сообществ
+              и объединяем молодых и уже известных художников.
+            </p>
+            <p>
+              Выпускаем ежегодный Гид по Беларуси "Где пройти УЗИ и сколько это
+              стоит".
+            </p>
+            <p>
+              Проводим реальные и виртуальные "розовые" выставки, где через
+              искусство объединяем художников, рассказываем о ранней диагностике
+              и помогаем онко-пациентам. Посетите первую выставку в виртуальном
+              пространстве PinkMetaverseOctober прямо сейчас.
+            </p>
+            <p>
+              Выпускаем благотворительные открытки "Си-си-кретики", купить их
+              можно через сервис Cardsi.
+            </p>
+            <p>
+              Самая актуальная информация – в нашем официальном аккаунте в{" "}
+              <a
+                href="https://www.instagram.com/rykamitrogat/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Instagram
+              </a>
+              .
+            </p>
+            <p>
+              Если вы хотите связаться с нами, предложить сотрудничество,
+              полезный материал или оставить отзыв, пожалуйста, пишите на{" "}
+              <a href="mailto:rykamitrogat@proton.me" target="_blank">
+                rykamitrogat@proton.me
+              </a>
+            </p>
+          </div>
+        ),
+      },
+    ]}
+  /> -->
 </Layout>

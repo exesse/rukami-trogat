@@ -1,0 +1,16 @@
+---
+const { items } = Astro.props;
+---
+
+<ul>
+  {
+    items.map((item: { title: string; description: string }) => {
+      return (
+        <li>
+          <div>{item.title}</div>
+          <div>{item.description}</div>
+        </li>
+      );
+    })
+  }
+</ul>
