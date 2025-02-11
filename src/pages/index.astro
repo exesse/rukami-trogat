@@ -9,9 +9,7 @@ import remissijaImage from "../assets/main/remissija.webp";
 import ArrowImage from "../assets/main/arrow.svg";
 import Questions from "../assets/main/questions.svg";
 import Dropdown from "../components/Dropdown.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Section from "../components/Section.astro";
 ---
 
 <Layout title="Путь пациента">
@@ -41,55 +39,97 @@ import Dropdown from "../components/Dropdown.astro";
       />
     </div>
   </div>
-  <ul
-    class="text-[14px] leading-[18px] text-center py-6 sm:text-[18px] sm:leading-[24px] lg:text-left lg:flex lg:gap-5 lg:py-14 xl:text-[20px] xl:leading-[26px] xl:gap-10 xl:py-20"
-  >
-    <li class="mb-8">
-      Мы постарались собрать всю необходимую информацию <b
-        >структурировано и кратко</b
-      >, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.
-    </li>
-    <li class="mb-8">
-      Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь, показать
-      тебе, что ты не одна и дать подсказки, что тебя ждет и как можно избежать негативных
-      последствий болезни.
-    </li>
-    <li>
-      И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества
-      жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению
-      в 94% случаев!
-    </li>
-  </ul>
-  <ul class="py-6">
-    <li class="bg-[#f7dac9] rounded-[30px] p-7 mb-5">
-      <a href="/postanovka-diagnoza">
-        <img src={diagnozImage.src} alt="Постановка диагноза" class="mb-10" />
-        <p class="text-[30px] font-semibold leading-[30px]">
-          Постановка<br />диагноза
-        </p>
-      </a>
-    </li>
-    <li class="bg-[#d2c5bc] rounded-[30px] p-7 mb-5">
-      <a href="/operacija-i-lecheie">
-        <img src={operacijaImage.src} alt="Операция и лечение" class="mb-10" />
-        <p class="text-[30px] font-semibold leading-[30px]">
-          Операция<br /> и лечение
-        </p>
-      </a>
-    </li>
-    <li class="bg-[#e1d2e1] rounded-[30px] p-7">
-      <a href="/zhizn-posle-remissija">
-        <img
-          src={remissijaImage.src}
-          alt="Жизнь после и ремиссия"
-          class="mb-10"
-        />
-        <p class="text-[30px] font-semibold leading-[30px]">
-          Жизнь после<br /> и ремиссия
-        </p>
-      </a>
-    </li>
-  </ul>
+  <Section>
+    <ul
+      class="text-[14px] leading-[18px] text-center sm:text-[18px] sm:leading-[24px] lg:text-left lg:flex lg:gap-5 xl:text-[20px] xl:leading-[26px] xl:gap-10"
+    >
+      <li class="mb-8 lg:mb-0">
+        Мы постарались собрать всю необходимую информацию <b
+          >структурировано и кратко</b
+        >, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.
+      </li>
+      <li class="mb-8 lg:mb-0">
+        Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь,
+        показать тебе, что ты не одна и дать подсказки, что тебя ждет и как можно
+        избежать негативных последствий болезни.
+      </li>
+      <li>
+        И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества
+        жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению
+        в 94% случаев!
+      </li>
+    </ul>
+  </Section>
+  <Section>
+    <ul class="lg:flex lg:gap-5 lg:justify-between">
+      <li class="lg:max-w-[33%] lg:flex-1">
+        <a
+          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#f7dac9] rounded-[30px] p-7 group"
+          href="/postanovka-diagnoza"
+          title="Узнайте больше о процессе постановки диагноза рака молочной железы"
+        >
+          <div
+            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
+          >
+            <img
+              src={diagnozImage.src}
+              alt="Постановка диагноза"
+              class="w-full transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <p
+            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
+          >
+            Постановка<br />диагноза
+          </p>
+        </a>
+      </li>
+      <li class="lg:max-w-[33%] lg:flex-1">
+        <a
+          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#d2c5bc] rounded-[30px] p-7 group"
+          href="/operacija-i-lecheie"
+          title="Информация об операции и методах лечения рака молочной железы"
+        >
+          <div
+            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
+          >
+            <img
+              src={operacijaImage.src}
+              alt="Операция и лечение"
+              class="w-full transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <p
+            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
+          >
+            Операция<br /> и лечение
+          </p>
+        </a>
+      </li>
+      <li class="lg:max-w-[33%] lg:flex-1">
+        <a
+          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#e1d2e1] rounded-[30px] p-7 group"
+          href="/zhizn-posle-remissija"
+          title="Узнайте о жизни после лечения и периоде ремиссии"
+        >
+          <div
+            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
+          >
+            <img
+              src={remissijaImage.src}
+              alt="Жизнь после и ремиссия"
+              class="w-full transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+          <p
+            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
+          >
+            Жизнь после<br /> и ремиссия
+          </p>
+        </a>
+      </li>
+    </ul>
+  </Section>
   <Divider />
   <p class="py-6 text-[24px] leading-[30px] font-semibold">
     Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы.
