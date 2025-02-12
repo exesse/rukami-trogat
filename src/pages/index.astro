@@ -2,139 +2,81 @@
 import Layout from "../layouts/Layout.astro";
 import Divider from "../components/Divider.astro";
 
-import mainImage from "../assets/main/top-banner.png";
 import diagnozImage from "../assets/main/diagnoz.png";
 import operacijaImage from "../assets/main/operacija.webp";
 import remissijaImage from "../assets/main/remissija.webp";
-import ArrowImage from "../assets/main/arrow.svg";
 import Questions from "../assets/main/questions.svg";
-import Dropdown from "../components/Dropdown.astro";
 import Section from "../components/Section.astro";
+import HeroBanner from "../components/HeroBanner.astro";
+import TextBulletsList from "../components/TextBullets/TextBulletsList.astro";
+import TextBulletsItem from "../components/TextBullets/TextBulletsItem.astro";
+import MainNavigationList from "../components/MainNavigation/MainNavigationList.astro";
+import MainNavigationItem from "../components/MainNavigation/MainNavigationItem.astro";
+import MainNavigationCard from "../components/MainNavigation/MainNavigationCard.astro";
 ---
 
 <Layout title="Путь пациента">
-  <div class="pt-12 pb-6 lg:flex lg:items-center">
-    <div class="lg:w-[50%] lg:pr-10">
-      <h1
-        class="text-[40px] mb-12 font-semibold leading-[32px] lg:text-[70px] lg:leading-[56px] lg:text-center xl:text-[80px] xl:leading-[64px] 2xl:text-[120px] 2xl:leading-[90px]"
-      >
-        Путь пациента
-      </h1>
-      <h2 class="text-[20px] font-semibold leading-[24px] lg:text-center">
-        Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше
-        узнать особенности пути онкопациента в Беларуси – начиная от постановки
-        диагноза и заканчивая качеством твоей жизни в ремиссии
-      </h2>
-      <img
-        src={ArrowImage.src}
-        class="hidden lg:block m-auto mt-10"
-        alt="Стрелка вниз"
-      />
-    </div>
-    <div class="lg:w-[50%]">
-      <img
-        src={mainImage.src}
-        alt="Путь пациента"
-        class="w-full h-auto pt-8 lg:py-0"
-      />
-    </div>
-  </div>
+  <HeroBanner />
   <Section>
-    <ul
-      class="text-[14px] leading-[18px] text-center sm:text-[18px] sm:leading-[24px] lg:text-left lg:flex lg:gap-5 xl:text-[20px] xl:leading-[26px] xl:gap-10"
-    >
-      <li class="mb-8 lg:mb-0">
+    <TextBulletsList>
+      <TextBulletsItem class="mb-8 lg:mb-0">
         Мы постарались собрать всю необходимую информацию <b
           >структурировано и кратко</b
         >, чтобы ты могла углубиться в волнующую тебя тему самостоятельно.
-      </li>
-      <li class="mb-8 lg:mb-0">
+      </TextBulletsItem>
+      <TextBulletsItem class="mb-8 lg:mb-0">
         Наша задача: <b>рассказать тебе план действий</b> и облегчить твой путь,
         показать тебе, что ты не одна и дать подсказки, что тебя ждет и как можно
         избежать негативных последствий болезни.
-      </li>
-      <li>
+      </TextBulletsItem>
+      <TextBulletsItem>
         И помни, на сегодняшний день <b>рак успешно лечится</b> даже без потери качества
         жизни женщины! Обнаруженный на ранней стадии, он поддается полному излечению
         в 94% случаев!
-      </li>
-    </ul>
+      </TextBulletsItem>
+    </TextBulletsList>
   </Section>
   <Section>
-    <ul class="lg:flex lg:gap-5 lg:justify-between">
-      <li class="lg:max-w-[33%] lg:flex-1">
-        <a
-          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#f7dac9] rounded-[30px] p-7 group"
-          href="/postanovka-diagnoza"
-          title="Узнайте больше о процессе постановки диагноза рака молочной железы"
+    <MainNavigationList>
+      <MainNavigationItem>
+        <MainNavigationCard
+          class="bg-[#f7dac9] mb-5 lg:mb-0"
+          image={{ src: diagnozImage.src, alt: "Постановка диагноза" }}
+          link={{
+            href: "/postanovka-diagnoza",
+            title:
+              "Узнайте больше о процессе постановки диагноза рака молочной железы",
+          }}>Постановка<br />диагноза</MainNavigationCard
         >
-          <div
-            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
-          >
-            <img
-              src={diagnozImage.src}
-              alt="Постановка диагноза"
-              class="w-full transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <p
-            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
-          >
-            Постановка<br />диагноза
-          </p>
-        </a>
-      </li>
-      <li class="lg:max-w-[33%] lg:flex-1">
-        <a
-          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#d2c5bc] rounded-[30px] p-7 group"
-          href="/operacija-i-lecheie"
-          title="Информация об операции и методах лечения рака молочной железы"
+      </MainNavigationItem>
+      <MainNavigationItem>
+        <MainNavigationCard
+          class="bg-[#d2c5bc] mb-5 lg:mb-0"
+          image={{ src: operacijaImage.src, alt: "Операция и лечение" }}
+          link={{
+            href: "/operacija-i-lecheie",
+            title:
+              "Информация об операции и методах лечения рака молочной железы",
+          }}>Операция<br /> и лечение</MainNavigationCard
         >
-          <div
-            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
-          >
-            <img
-              src={operacijaImage.src}
-              alt="Операция и лечение"
-              class="w-full transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <p
-            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
-          >
-            Операция<br /> и лечение
-          </p>
-        </a>
-      </li>
-      <li class="lg:max-w-[33%] lg:flex-1">
-        <a
-          class="sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block bg-[#e1d2e1] rounded-[30px] p-7 group"
-          href="/zhizn-posle-remissija"
-          title="Узнайте о жизни после лечения и периоде ремиссии"
+      </MainNavigationItem>
+      <MainNavigationItem>
+        <MainNavigationCard
+          class="bg-[#e1d2e1]"
+          image={{ src: remissijaImage.src, alt: "Жизнь после и ремиссия" }}
+          link={{
+            href: "/zhizn-posle-remissija",
+            title: "Узнайте о жизни после лечения и периоде ремиссии",
+          }}>Жизнь после<br /> и ремиссия</MainNavigationCard
         >
-          <div
-            class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full overflow-hidden rounded-full"
-          >
-            <img
-              src={remissijaImage.src}
-              alt="Жизнь после и ремиссия"
-              class="w-full transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <p
-            class="text-[30px] font-semibold leading-[30px] lg:text-[50px] lg:leading-[50px]"
-          >
-            Жизнь после<br /> и ремиссия
-          </p>
-        </a>
-      </li>
-    </ul>
+      </MainNavigationItem>
+    </MainNavigationList>
   </Section>
   <Divider />
-  <p class="py-6 text-[24px] leading-[30px] font-semibold">
+  <h2 class="py-6 text-[24px] leading-[30px] font-semibold">
     Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы.
     Истории женщин о принятии, мотивации и жизни после болезни в этом видео.
-  </p>
+  </h2>
   <div class="py-6 rounded-[30px] overflow-hidden h-[180px]">
     <iframe
       class="w-full"

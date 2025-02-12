@@ -1,0 +1,31 @@
+---
+const {
+  image: { src, alt },
+  link: { href, title },
+  class: className,
+} = Astro.props;
+---
+
+<a
+  class:list={[
+    "block sm:flex sm:flex-row-reverse sm:justify-between sm:items-center lg:block rounded-[30px] p-7 group",
+    className,
+  ]}
+  href={href}
+  title={title}
+>
+  <div
+    class="mb-10 w-[320px] mx-auto sm:mb-0 sm:mx-0 lg:mb-[100px] lg:w-full lg:overflow-hidden lg:rounded-full"
+  >
+    <img
+      src={src}
+      alt={alt}
+      class="w-full transition-transform duration-300 group-hover:scale-105"
+    />
+  </div>
+  <p
+    class="text-[30px] font-semibold leading-[30px] lg:text-[35px] lg:leading-[35px] xl:text-[40px] xl:leading-[40px] 2xl:text-[50px] 2xl:leading-[50px]"
+  >
+    <slot />
+  </p>
+</a>

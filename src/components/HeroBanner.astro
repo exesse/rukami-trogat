@@ -1,0 +1,28 @@
+---
+import mainImage from "../assets/main/top-banner.png";
+import ArrowImage from "../assets/main/arrow.svg";
+import PageTitle from "./PageTitle.astro";
+---
+
+<div class="pt-12 pb-6 lg:flex lg:items-center">
+  <div class="lg:w-[50%] lg:pr-10">
+    <PageTitle>Путь пациента</PageTitle>
+    <h2 class="text-[20px] font-semibold leading-[24px] lg:text-center">
+      Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше
+      узнать особенности пути онкопациента в Беларуси – начиная от постановки
+      диагноза и заканчивая качеством твоей жизни в ремиссии
+    </h2>
+    <img
+      src={ArrowImage.src}
+      class="hidden lg:block m-auto mt-10"
+      alt="Стрелка вниз"
+    />
+  </div>
+  <div class="lg:w-[50%]">
+    <img
+      src={mainImage.src}
+      alt="Путь пациента"
+      class="w-full h-auto pt-8 lg:py-0"
+    />
+  </div>
+</div>

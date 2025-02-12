@@ -1,0 +1,17 @@
+---
+import Line from "../../assets/main/line.png";
+---
+
+<div class="relative lg:py-[140px]">
+  <img
+    src={Line.src}
+    alt="Красивая дуга"
+    class="absolute top-0 left-[100px] hidden lg:block xl:left-[150px] 2xl:left-[200px]"
+  />
+  <ul class="lg:flex lg:gap-5 lg:justify-between"><slot /></ul>
+  <img
+    src={Line.src}
+    alt="Красивая дуга"
+    class="absolute bottom-0 right-[100px] rotate-180 hidden lg:block xl:right-[150px] 2xl:right-[200px]"
+  />
+</div>
