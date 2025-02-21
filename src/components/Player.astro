@@ -1,0 +1,48 @@
+---
+const {
+  src,
+  title,
+  poster: { src: posterSrc, alt: posterAlt },
+} = Astro.props;
+---
+
+<div class="w-full">
+  <div class="relative w-full" id="poster">
+    <img src={posterSrc} alt={posterAlt} class="w-full" />
+    <svg
+      role="presentation"
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      width="70"
+      height="70"
+      viewBox="0 0 60 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="30" cy="30" r="30" fill="black"></circle>
+      <path
+        d="M41 29.7495L24.0014 19.2495L24.0061 40.2493L41 29.7495Z"
+        fill="white"></path>
+    </svg>
+  </div>
+  <iframe
+    class="w-full hidden h-[180px] sm:h-[350px] lg:h-[560px] 2xl:h-[750px]"
+    id="player"
+    src={src}
+    title={title}
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+
+<script>
+  const player = document.getElementById("player");
+  const poster = document.querySelector("#poster");
+  poster?.addEventListener("click", () => {
+    poster.classList.add("hidden");
+    player?.classList.remove("hidden");
+    if (player instanceof HTMLIFrameElement) {
+      const separator = player.src.includes("?") ? "&" : "?";
+      player.src = `${player.src}${separator}autoplay=1`;
+    }
+  });
+</script>

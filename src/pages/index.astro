@@ -5,6 +5,7 @@ import Divider from "../components/Divider.astro";
 import diagnozImage from "../assets/main/diagnoz.png";
 import operacijaImage from "../assets/main/operacija.webp";
 import remissijaImage from "../assets/main/remissija.webp";
+import coverImage from "../assets/main/cover.png";
 import Questions from "../assets/main/questions.svg";
 import Section from "../components/Section.astro";
 import HeroBanner from "../components/HeroBanner.astro";
@@ -13,6 +14,12 @@ import TextBulletsItem from "../components/TextBullets/TextBulletsItem.astro";
 import MainNavigationList from "../components/MainNavigation/MainNavigationList.astro";
 import MainNavigationItem from "../components/MainNavigation/MainNavigationItem.astro";
 import MainNavigationCard from "../components/MainNavigation/MainNavigationCard.astro";
+import Dropdown from "../components/Dropdown/Dropdown.astro";
+import DropdownTitle from "../components/Dropdown/DropdownTitle.astro";
+import DropdownContent from "../components/Dropdown/DropdownContent.astro";
+import DropdownItem from "../components/Dropdown/DropdownItem.astro";
+import DropdownParagraph from "../components/Dropdown/DropdownParagraph.astro";
+import Player from "../components/Player.astro";
 ---
 
 <Layout title="Путь пациента">
@@ -72,157 +79,202 @@ import MainNavigationCard from "../components/MainNavigation/MainNavigationCard.
       </MainNavigationItem>
     </MainNavigationList>
   </Section>
-  <Divider />
-  <h2 class="py-6 text-[24px] leading-[30px] font-semibold">
-    Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы.
-    Истории женщин о принятии, мотивации и жизни после болезни в этом видео.
-  </h2>
-  <div class="py-6 rounded-[30px] overflow-hidden h-[180px]">
-    <iframe
-      class="w-full"
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/dfhXN4kO2Uk?si=zkRwHwHiErCg1YdK"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen></iframe>
-  </div>
-  <Divider />
-  <div>
+  <Divider class="mb-6 lg:mb-14 xl:mb-20" />
+  <Section>
+    <h2
+      class="text-[24px] font-semibold leading-[30px] lg:text-[35px] lg:leading-[35px] xl:text-[40px] xl:leading-[40px] 2xl:text-[50px] 2xl:leading-[50px]"
+    >
+      Ежедневно в Беларуси 15 женщин узнают о диагнозе рак молочной железы.
+      Истории женщин о принятии, мотивации и жизни после болезни в этом видео.
+    </h2>
+  </Section>
+  <Section>
+    <div class="rounded-[30px] overflow-hidden">
+      <Player
+        src="https://www.youtube.com/embed/dfhXN4kO2Uk?si=zkRwHwHiErCg1YdK"
+        title="Истории женщин о принятии, мотивации и жизни после болезни"
+        poster={{
+          src: coverImage.src,
+          alt: "Истории женщин о принятии, мотивации и жизни после болезни",
+        }}
+      />
+    </div>
+  </Section>
+  <Divider class="mb-6 lg:mb-14 xl:mb-20" />
+  <Section>
     <img src={Questions.src} alt="Вопросы" class="m-auto mt-10 mb-6" />
-  </div>
-  <!-- <Dropdown
-    items={[
-      {
-        title: 'О проекте "Руками трогать"',
-        description: (
-          <div>
-            <p>
-              Руками трогать – это инициатива, популяризирующая регулярное
-              обследование, как метод профилактики и раннего выявления рака
-              молочной железы.
-            </p>
-            <p>
-              Создана в Минске в 2015 году и объединяет женское онко-сообщество,
-              медиков и неравнодушных специалистов креативных индустрий.
-            </p>
-            <p>
-              Проект «Руками трогать» родился из сухой официальной статистики и
-              живых историй, помноженных на желание и необходимость
-              сфокусировать общественное внимание на проблеме онкологии в
-              Беларуси. Кроме того, несмотря на всю серьезность проблемы, нам
-              захотелось сделать полезный проект, чтобы рассказать о диагностике
-              и профилактике, научить как правильно ее делать, побудить чаще
-              ходить к специалистам.
-            </p>
-            <p>
-              «Руками не трогать!» — данный запрет встречается в жизни довольно
-              часто. Но диагностика рака молочной железы – это тот самый случай,
-              когда трогать руками не только можно, но и НУЖНО! И чем чаще, тем
-              лучше.
-            </p>
-            <p>
-              Ежегодно в рамках "Розового октября" – месяца борьбы с раком
-              молочной железы, мы проводим информационные и pr-кампании по
-              раннему выявлению РМЖ, выставки, мероприятия и специальные проекты
-              с клиниками Беларуси.
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: 'Кто составлял "Путь пациента"',
-        description: (
-          <div>
-            <p>
-              Идея собрать всю необходимую информацию и подать ее именно с точки
-              зрения пациента появилась после того, как в аккаунт "Руками
-              трогать" начали обращаться женщины, которые узнали о РМЖ и не
-              знали, что им дальше делать, ведь мы не готовы к болезни и не
-              знаем многих особенностей пути, пока сами не столкнемся с
-              диагнозом.
-            </p>
-            <p>
-              Мы собрали ответы на часто задаваемые вопросы и структурировали их
-              в соответствии с этапами течения болезни и ремиссии.
-            </p>
-            <p>
-              Материалы подготовлены командой проекта Руками трогать при помощи
-              сервиса искусственного интеллекта ChatGPT, выверены врачами, часть
-              материалов была написана самими онко-пациентами, прошедшими этот
-              путь и находящимися в ремиссии.
-            </p>
-            <p>
-              Благодарим за помощь в создании всех, кто принимал участие – от
-              наших подписчиков до дизайнеров!
-            </p>
-          </div>
-        ),
-      },
-      {
-        title: "Что еще мы делаем",
-        description: (
-          <div>
-            <div>
-              <p>Мы стараемся развивать проект в двух направлениях:</p>
-              <ul>
-                <li>
-                  информирование женщин о ранней диагностике, как об эффективном
-                  методе борьбы с раком
-                </li>
-                <li>
-                  помощь и поддержка онко-пациентам, проходящим лечение прямо
-                  сейчас
-                </li>
-              </ul>
-            </div>
-            <p>
-              Мы создаем креативные идеи социальных информационных и
-              pr-кампаний, снимаем контент и пишем тексты. Например,
-              #НеЗабудьПроГрудь #ВпередиРакаГруди. Ищем нестандартные каналы
-              коммуникации, чтобы доносить идею ранней диагностики до широкой
-              аудитории женщин.
-            </p>
-            <p>
-              Проводим благотворительные арт-аукционы в поддержку онко-сообществ
-              и объединяем молодых и уже известных художников.
-            </p>
-            <p>
-              Выпускаем ежегодный Гид по Беларуси "Где пройти УЗИ и сколько это
-              стоит".
-            </p>
-            <p>
-              Проводим реальные и виртуальные "розовые" выставки, где через
-              искусство объединяем художников, рассказываем о ранней диагностике
-              и помогаем онко-пациентам. Посетите первую выставку в виртуальном
-              пространстве PinkMetaverseOctober прямо сейчас.
-            </p>
-            <p>
-              Выпускаем благотворительные открытки "Си-си-кретики", купить их
-              можно через сервис Cardsi.
-            </p>
-            <p>
-              Самая актуальная информация – в нашем официальном аккаунте в{" "}
-              <a
-                href="https://www.instagram.com/rykamitrogat/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Instagram
-              </a>
-              .
-            </p>
-            <p>
-              Если вы хотите связаться с нами, предложить сотрудничество,
-              полезный материал или оставить отзыв, пожалуйста, пишите на{" "}
-              <a href="mailto:rykamitrogat@proton.me" target="_blank">
-                rykamitrogat@proton.me
-              </a>
-            </p>
-          </div>
-        ),
-      },
-    ]}
-  /> -->
+    <h2
+      class="text-center text-[40px] font-semibold leading-[40px] lg:text-[45px] lg:leading-[45px] xl:text-[50px] xl:leading-[50px] 2xl:text-[60px] 2xl:leading-[60px]"
+    >
+      О нас
+    </h2>
+  </Section>
+  <Divider class="mb-3 lg:mb-6 xl:mb-10" />
+  <Dropdown>
+    <DropdownItem>
+      <DropdownTitle>О проекте "Руками трогать"</DropdownTitle>
+      <DropdownContent>
+        <DropdownParagraph>
+          Руками трогать – это инициатива, популяризирующая регулярное
+          обследование, как метод профилактики и раннего выявления рака молочной
+          железы.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Создана в Минске в 2015 году и объединяет женское онко-сообщество,
+          медиков и неравнодушных специалистов креативных индустрий.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Проект «Руками трогать» родился из сухой официальной статистики и
+          живых историй, помноженных на желание и необходимость сфокусировать
+          общественное внимание на проблеме онкологии в Беларуси. Кроме того,
+          несмотря на всю серьезность проблемы, нам захотелось сделать полезный
+          проект, чтобы рассказать о диагностике и профилактике, научить как
+          правильно ее делать, побудить чаще ходить к специалистам.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          «Руками не трогать!» — данный запрет встречается в жизни довольно
+          часто. Но диагностика рака молочной железы – это тот самый случай,
+          когда трогать руками не только можно, но и НУЖНО! И чем чаще, тем
+          лучше.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Ежегодно в рамках "Розового октября" – месяца борьбы с раком молочной
+          железы, мы проводим информационные и pr-кампании по раннему выявлению
+          РМЖ, выставки, мероприятия и специальные проекты с клиниками Беларуси.
+        </DropdownParagraph>
+      </DropdownContent>
+    </DropdownItem>
+    <DropdownItem>
+      <DropdownTitle>Кто составлял "Путь пациента"</DropdownTitle>
+      <DropdownContent>
+        <DropdownParagraph>
+          Идея собрать всю необходимую информацию и подать ее именно с точки
+          зрения пациента появилась после того, как в аккаунт "Руками трогать"
+          начали обращаться женщины, которые узнали о РМЖ и не знали, что им
+          дальше делать, ведь мы не готовы к болезни и не знаем многих
+          особенностей пути, пока сами не столкнемся с диагнозом.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Мы собрали ответы на часто задаваемые вопросы и структурировали их в
+          соответствии с этапами течения болезни и ремиссии.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Материалы подготовлены командой проекта Руками трогать при помощи
+          сервиса искусственного интеллекта ChatGPT, выверены врачами, часть
+          материалов была написана самими онко-пациентами, прошедшими этот путь
+          и находящимися в ремиссии.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Благодарим за помощь в создании всех, кто принимал участие – от наших
+          подписчиков до дизайнеров!
+        </DropdownParagraph>
+      </DropdownContent>
+    </DropdownItem>
+    <DropdownItem>
+      <DropdownTitle>Что еще мы делаем</DropdownTitle>
+      <DropdownContent>
+        <DropdownParagraph>
+          <p>Мы стараемся развивать проект в двух направлениях:</p>
+          <ul class="list-disc list-inside my-3 lg:my-6 xl:my-10">
+            <li class="mb-1 lg:mb-3 xl:mb-5">
+              информирование женщин о ранней диагностике, как об эффективном
+              методе борьбы с раком
+            </li>
+            <li>
+              помощь и поддержка онко-пациентам, проходящим лечение прямо сейчас
+            </li>
+          </ul>
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Мы создаем креативные идеи социальных информационных и pr-кампаний,
+          снимаем контент и пишем тексты. Например, <a
+            href="https://www.instagram.com/p/CjK-GGao4wb/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="underline decoration-solid hover:no-underline"
+            >#НеЗабудьПроГрудь</a
+          >
+          <a
+            href="https://www.instagram.com/p/CUedq_Eowys/"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">#ВпередиРакаГруди</a
+          >. Ищем <a
+            href="https://citydog.io/post/zadzien-zavedeniya-minsk/"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">нестандартные каналы коммуникации</a
+          >, чтобы доносить идею ранней диагностики до широкой аудитории женщин.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Проводим <a
+            href="https://www.facebook.com/media/set/?set=a.2403679056615859&type=3"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">благотворительные арт-аукционы</a
+          > в поддержку онко-сообществ и объединяем молодых и уже известных <a
+            href="https://citydog.io/post/zaden-rukami-lot/"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">художников</a
+          >.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Выпускаем ежегодный Гид по Беларуси <a
+            href="https://dzen.ru/media/id/61671ec8bab848028d51e58e/63494b92f0341b2e4c839a71"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">"Где пройти УЗИ и сколько это стоит"</a
+          >.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Проводим <a
+            href="https://youtu.be/jkgBkHTi7WQ?t=824"
+            class="underline decoration-solid hover:no-underline"
+            target="_blank"
+            rel="noreferrer noopener">реальные</a
+          > и виртуальные "розовые" выставки, где через искусство объединяем художников,
+          рассказываем о ранней диагностике и помогаем онко-пациентам. Посетите первую
+          выставку в виртуальном пространстве <a
+            href="https://www.instagram.com/pinkmetaverseoctober/"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">PinkMetaverseOctober</a
+          > прямо сейчас.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Выпускаем благотворительные открытки <a
+            href="https://l.instagram.com/?u=https%3A%2F%2Fcardsi.by%2Fcards%2Fcards%2Fauthor_197&e=AT1AbUT5Hlq4yojI0cC1vZyk6dGmsxyjubzbm9j4sQGY6hpTND0ItnWJt-Vm7N9YsqHyD0zr0LpwBLi7CO1ZVo6l-tSIqZlwRez4Wp1Hb-gxhujZzSPG"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener">"Си-си-кретики"</a
+          >, купить их можно через сервис Cardsi.
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Самая актуальная информация – в нашем официальном аккаунте в{" "}
+          <a
+            href="https://www.instagram.com/rykamitrogat/"
+            target="_blank"
+            class="underline decoration-solid hover:no-underline"
+            rel="noreferrer noopener"
+          >
+            Instagram
+          </a>
+          .
+        </DropdownParagraph>
+        <DropdownParagraph>
+          Если вы хотите связаться с нами, предложить сотрудничество, полезный
+          материал или оставить отзыв, пожалуйста, пишите на{" "}
+          <a
+            href="mailto:rykamitrogat@proton.me"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="underline decoration-solid hover:no-underline"
+          >
+            rykamitrogat@proton.me
+          </a>
+        </DropdownParagraph>
+      </DropdownContent>
+    </DropdownItem>
+  </Dropdown>
 </Layout>

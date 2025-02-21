@@ -1,0 +1,15 @@
+<ul>
+  <slot />
+</ul>
+
+<script>
+  const dropdownItems = document.querySelectorAll("[data-dropdown]");
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const dropdownContent = item.nextElementSibling;
+      dropdownContent?.classList.toggle("h-[calc-size(min-content,size)]");
+      const icon = item.querySelector("svg");
+      icon?.classList.toggle("rotate-45");
+    });
+  });
+</script>

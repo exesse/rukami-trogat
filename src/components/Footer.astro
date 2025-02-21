@@ -1,10 +1,108 @@
-<footer class="py-8 px-4 md:px-6 lg:px-8">
+<footer class="pt-8 px-4 md:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
-    {/* Main Footer Content */}
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* Footer Menu */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="text-center md:text-left">
+        <div class="space-y-4">
+          <div>
+            <a
+              href="mailto:rykamitrogat@proton.me"
+              class="hover:text-gray-600"
+              title="Написать письмо"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              rykamitrogat@proton.me
+            </a>
+          </div>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a
+              href="https://www.instagram.com/rykamitrogat/"
+              class="w-[31px] h-[31px]"
+              aria-label="Instagram"
+              title="Перейти в Instagram"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-[31px] h-[31px]"
+                viewBox="0 0 53 52"
+                fill="none"
+              >
+                <rect
+                  x="0.878906"
+                  y="0.0378418"
+                  width="51.2944"
+                  height="51.2944"
+                  rx="25.6472"
+                  fill="black"></rect>
+                <rect
+                  x="12.7471"
+                  y="11.9089"
+                  width="27.5559"
+                  height="27.5559"
+                  rx="6.36476"
+                  stroke="white"
+                  stroke-width="2"></rect>
+                <circle
+                  cx="26.5257"
+                  cy="25.6832"
+                  r="6.47638"
+                  stroke="white"
+                  stroke-width="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/rykamitrogat"
+              aria-label="Facebook"
+              title="Перейти в Facebook"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="w-[31px] h-[31px]"
+                viewBox="0 0 52 52"
+                fill="none"
+              >
+                <rect
+                  x="0.402344"
+                  y="0.0378418"
+                  width="51.2944"
+                  height="51.2944"
+                  rx="25.6472"
+                  fill="black"></rect>
+                <rect
+                  x="8.4541"
+                  y="10.0679"
+                  width="32.9964"
+                  height="32.9964"
+                  fill="url(#pattern0)"></rect>
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_100_15154"
+                      transform="scale(0.00195312)"></use>
+                  </pattern>
+                  <image
+                    id="image0_100_15154"
+                    width="512"
+                    height="512"
+                    xlink:href="data:image/png;base64,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IQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQCEBAACFBAAAFBIAAFBIAABAIQEAAIUEAAAUEgAAUEgAAEAhAQAAhQQAABQSAABQSAAAQKHz0wNgg36f5MvpERvzxfQA2JpzR0dH0xsAgD3zCAAACgkAACgkAACgkAAAgEICAAAKCQAAKCQAAKCQAACAQgIAAAoJAAAoJAAAoJAAAIBCAgAACgkAACgkAACgkAAAgEICAAAKCQAAKCQAAKCQAACAQgIAAAoJAAAoJAAAoJAAAIBCAgAACgkAACgkAACgkAAAgEICAAAKCQAAKCQAAKCQAACAQgIAAAoJAAAoJAAAoJAAAIBCAgAACgkAACgkAACgkAAAgEICAAAK/QcUyoNmdSSJDwAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       <nav class="space-y-3 text-center md:text-left">
-        <h3 class="font-semibold mb-4">Меню</h3>
         <ul class="space-y-2">
           <li>
             <a href="/about" class="hover:text-gray-600" title="О нас">О нас</a>
@@ -32,47 +130,14 @@
           </li>
         </ul>
       </nav>
-
-      {/* Contact Info */}
-      <div class="text-center md:text-left">
-        <h3 class="font-semibold mb-4">Контакты</h3>
-        <a
-          href="mailto:rykamitrogat@proton.me"
-          class="hover:text-gray-600"
-          title="Написать письмо"
-        >
-          rykamitrogat@proton.me
-        </a>
-      </div>
-
-      {/* Social Media */}
-      <div class="text-center md:text-left">
-        <h3 class="font-semibold mb-4">Социальные сети</h3>
-        <div class="flex justify-center md:justify-start space-x-4">
-          <a
-            href="https://instagram.com"
-            class="hover:text-gray-600"
-            aria-label="Instagram"
-            title="Перейти в Instagram"
-          >
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-              ></path>
-            </svg>
-          </a>
-        </div>
-      </div>
     </div>
-
-    {/* Disclaimer and Logo */}
-    <div class="mt-8 pt-8 border-t border-gray-200 text-center">
-      <h2 class="text-xl font-bold mb-4">Руками Трогать</h2>
-      <p class="max-w-2xl mx-auto text-sm text-gray-500">
+    <div class="mt-8 pt-8 text-center">
+      <p class="max-w-2xl mx-auto text-xs text-black opacity-50 mb-4">
         Все опубликованные сведения носят исключительно информационный характер.
         Для полноценного лечения и принятия решения обязательна консультация
         специалиста
       </p>
+      <h2 class="text-xl font-bold">Руками Трогать</h2>
     </div>
   </div>
 </footer>
