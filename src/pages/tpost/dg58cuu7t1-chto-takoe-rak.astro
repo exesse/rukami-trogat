@@ -1,9 +1,59 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/posts/what-cancer.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
 <Layout title="Что такое рак - Руками Трогать">
   <PostTitle>Что такое рак</PostTitle>
-  <p>Content for the page goes here.</p>
+  <img src={Image.src} alt="Что такое рак" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">Привет, дорогая!</h2>
+    <p>Начать мы хотим с самого главного сообщения!</p>
+
+    <h3>
+      Ты должна знать, что на сегодняшний день рак молочной железы, даже в
+      агрессивной форме, поддается лечению. А выявленный на ранней стадии
+      (нулевой или первой) излечим в 96% случаев и даже без потери качества
+      жизни женщины!
+    </h3>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Точные причины возникновения раковых клеток до сих пор до конца не известны,
+    но мы знаем, как они зарождаются и как функционируют.
+  </PostContentItem>
+  <PostContentItem>
+    Рак начинается с того, что в какой-то клетке организма <strong
+      >ломается ее жизненный цикл</strong
+    >. Обычно клетка рождается, делится и умирает. Но раковая клетка продолжает
+    делиться и делиться, и образуется в опухоль. Сначала она маленькая и
+    питается за счет собственных ресурсов, но потом в ней образуются кровеносные
+    сосуды, которые прорастают в кровеносную систему, чтобы опухоль получала
+    больше питания и продолжала расти.
+  </PostContentItem>
+  <PostContentItem>
+    С током крови и лимфы раковые клетки могут распространяться по всему
+    организму, образуя вторичные опухоли в других органах – метастазы. Так рак,
+    если его не лечить, может захватить весь организм.
+  </PostContentItem>
+  <PostContentItem>
+    Лечение зависит от стадии заболевания и может включать в себя химиотерапию,
+    радиотерапию, хирургическое вмешательство, таргетную терапию и
+    иммунотерапию.
+  </PostContentItem>
+  <PostContentItem>
+    <strong
+      >Важно регулярно проходить обследования и иметь здоровый образ жизни,
+      чтобы снизить риск заболевания.</strong
+    >
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

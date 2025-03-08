@@ -1,8 +1,57 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/posts/risks.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Факторы риска - Руками Трогать">
+  <PostTitle>Факторы риска</PostTitle>
+  <img src={Image.src} alt="Факторы риска" class="mb-12" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Быть женщиной — это уже фактор риска, согласно данным ВОЗ, каждая 8-я
+      женщина может столкнуться с диагнозом РМЖ до своего 80-летнего возраста.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Мы хотим, чтобы бы ты понимала, что есть факторы, на которые невозможно
+    повлиять, а есть и те, которые мы можем контролировать. Посмотри, что из
+    этого ты можешь изменить прямо сейчас?
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Нельзя повлиять:</strong>
+  </PostContentItem>
+  <PostContentItem>
+    <ul class="list-disc pl-6">
+      <li>Пожилой возраст</li>
+      <li>Семейный анамнез РМЖ (болели мама, бабушка)</li>
+      <li>Генетические мутации</li>
+      <li>Раннее менархе (первая менструация) или поздняя менопауза</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Можно повлиять:</strong>
+  </PostContentItem>
+  <PostContentItem>
+    <ul class="list-disc pl-6">
+      <li>Отказ от курения</li>
+      <li>Умеренное потребление алкоголя</li>
+      <li>Подвижный образ жизни</li>
+      <li>Контроль избыточного веса</li>
+      <li>Стресс</li>
+      <li>Сбалансированное питание (оптимально - средиземноморская диета)</li>
+      <li>Контроль за уровнем сахара (диабет 2 типа)</li>
+      <li>Экологическая обстановка</li>
+      <li>Заболевания щитовидной железы и гормональные сбои</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

@@ -1,8 +1,48 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/posts/map.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Онкологический маршрут - Руками Трогать">
+  <PostTitle>Онкологический маршрут</PostTitle>
+  <img src={Image.src} alt="Онкологический маршрут" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Онкологический маршрут — это твой план лечения и медицинской помощи при
+      онкологическом диагнозе. Он определяет последовательность действий и
+      методы лечения, а также ответственных за них врачей и медицинских
+      учреждений.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Онкологический маршрут может включать в себя диагностику, химиотерапию,
+    радиотерапию, хирургическое лечение, таргетную и иммунную терапию,
+    психологическую поддержку и реабилитацию. При этом, следует понимать, что
+    <strong
+      >психологическая поддержка и реабилитация в большей степени зависит от нас
+      самих и редко осуществляется медицинскими учреждениями</strong
+    > в Беларуси, но крайне важна! Ведь от этого зависит твоя дальнейшая жизнь!
+  </PostContentItem>
+  <PostContentItem>
+    Еще онкологический маршрут может включать в себя рекомендации по
+    оперативному и регулярному мониторингу здоровья после окончания лечения.
+    Онкологический маршрут должен разрабатываться <strong
+      >индивидуально для каждого пациента и постоянно корректироваться</strong
+    > в зависимости от состояния здоровья и прогресса лечения.
+  </PostContentItem>
+  <PostContentItem>
+    Постарайся спланировать твой онкологический маршрут со своим врачом заранее,
+    так ты будешь <strong>лучше понимать что тебя ждет</strong> и сколько в среднем
+    может понадобится времени на лечение и восстановление.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

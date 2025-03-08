@@ -1,8 +1,74 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/posts/algorithm.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Алгоритм диагностирования и лечения - Руками Трогать">
+  <PostTitle>Алгоритм диагностирования и лечения</PostTitle>
+  <img
+    src={Image.src}
+    alt="Алгоритм диагностирования и лечения"
+    class="mb-12 w-full"
+  />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Чтобы составить твой онкологический маршрут, следует пройти все три этапа:
+    </h2>
+    <ul>
+      <li>→ Постановка диагноза</li>
+      <li>→ Определение стадии</li>
+      <li>→ Определение тактики лечения.</li>
+    </ul>
+    <p>Только после этого начнется твой Путь пациента.</p>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Диагностика рака молочной железы обычно включает несколько этапов:
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Консультация с врачом-гинекологом</strong> является первым этапом , где
+    будет обсуждена история болезни и выполнен осмотр (пальпаторный метод и визуальная
+    оценка). Довольно часто у гинеколога можно сделать и УЗИ.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Маммография</strong> — рентген-изображение молочной железы, которое помогает
+    выявить новообразования.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Биопсия</strong> — операция, при которой извлекается образец ткани для
+    дальнейшего исследования.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Дополнительные исследования</strong> — в зависимости от результатов маммографии
+    и биопсии, может быть необходимо пройти другие исследования, такие как УЗИ, КТ
+    или МРТ.
+  </PostContentItem>
+  <PostContentItem>
+    После прохождения всех этапов диагностики, врач-онколог <strong
+      >определит стадию</strong
+    > заболевания и назначит наиболее подходящий <strong>курс лечения</strong>.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Диагностика крайне важна!</strong>
+  </PostContentItem>
+  <PostContentItem>
+    Ведь она определяет правильную стратегию для успешного лечения. Поэтому
+    важно в <strong
+      >спорных случаях получить второе, а если нужно и третье мнение</strong
+    >
+    специалиста, чтобы не допустить ошибку. Не переживайте, что врач может обидеться.
+    В онколечении брать второе мнение – это норма.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

@@ -1,8 +1,50 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/posts/bel-statistika.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Статистика в мире и Беларуси - Руками Трогать">
+  <PostTitle>Статистика в мире и Беларуси</PostTitle>
+  <img src={Image.src} alt="Статистика в мире и Беларуси" class="mb-12" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      В среднем, в Беларуси 15 женщин в день (!) узнают о диагнозе РМЖ.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Статистика заболеваемости раком молочной железы растет с каждым годом и
+    зависит от региона, чаще встречается в развитых и развивающихся странах
+    (“болезнь больших городов”). Но не стоит пугаться! Часто прирост происходит
+    за счет обнаружения РМЖ на ранних стадиях в ходе профилактических осмотров и
+    скринингов, а это значит, что и <strong
+      >% выздоравливаемости также растет</strong
+    >.
+  </PostContentItem>
+  <PostContentItem>
+    Согласно данным Всемирной организации здравоохранения (ВОЗ), рак молочной
+    железы является одним из самых распространенных онкологических заболеваний у
+    женщин в мире, и <strong
+      >в 2022 году около 2.5 миллионам женщин был диагностирован РМЖ</strong
+    >. Информации о статистике заболеваемости в Беларуси на 2022 год пока
+    недостаточно, но в прошлых годах она находилась на достаточно высоком
+    уровне, и в Беларуси в сравнении с другими странами европейского региона
+    заболеваемость была выше среднего. К сожалению, у этой печальной статистики
+    есть и антропологический фактор — Чернобыльская катастрофа.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>
+      Около 6000 новых случаев рака молочной железы в Беларуси было выявлено в
+      2021 году, и около 5000 в 2020 году.
+    </strong>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>
