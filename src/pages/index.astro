@@ -23,7 +23,9 @@ import Player from "../components/Player.astro";
 ---
 
 <Layout title="Путь пациента">
-  <HeroBanner />
+  <Section>
+    <HeroBanner />
+  </Section>
   <Section>
     <TextBulletsList>
       <TextBulletsItem class="mb-8 lg:mb-0">
@@ -102,7 +104,7 @@ import Player from "../components/Player.astro";
   </Section>
   <Divider class="mb-6 lg:mb-14 xl:mb-20" />
   <Section>
-    <img src={Questions.src} alt="Вопросы" class="m-auto mt-10 mb-6" />
+    <img src={Questions.src} alt="Вопросы" class="m-auto mt-10 mb-6 w-[88px]" />
     <h2
       class="text-center text-[40px] font-semibold leading-[40px] lg:text-[45px] lg:leading-[45px] xl:text-[50px] xl:leading-[50px] 2xl:text-[60px] 2xl:leading-[60px]"
     >

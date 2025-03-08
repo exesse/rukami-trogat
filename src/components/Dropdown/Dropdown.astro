@@ -6,8 +6,8 @@
   const dropdownItems = document.querySelectorAll("[data-dropdown]");
   dropdownItems.forEach((item) => {
     item.addEventListener("click", () => {
-      const dropdownContent = item.nextElementSibling;
-      dropdownContent?.classList.toggle("h-[calc-size(min-content,size)]");
+      const dropdownContent = item.nextElementSibling?.children[0].children[0];
+      dropdownContent?.classList.toggle("max-h-full");
       const icon = item.querySelector("svg");
       icon?.classList.toggle("rotate-45");
     });

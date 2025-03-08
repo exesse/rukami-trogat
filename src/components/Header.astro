@@ -73,11 +73,13 @@ import TopMenuLink from "./TopMenuLink.astro";
     connectedCallback() {
       const button = this.querySelector("button");
       const nav = this.querySelector("ul");
+      const body = document.body;
 
       button?.addEventListener("click", () => {
         button.classList.toggle("tham-active");
         nav?.classList.toggle("left-0");
         nav?.classList.toggle("left-full");
+        body.classList.toggle("overflow-hidden");
       });
     }
   }

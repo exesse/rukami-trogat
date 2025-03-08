@@ -4,10 +4,12 @@ import ArrowImage from "../assets/main/arrow.svg";
 import PageTitle from "./PageTitle.astro";
 ---
 
-<div class="pt-12 pb-6 lg:flex lg:items-center">
-  <div class="lg:w-[50%] lg:pr-10">
+<div class="sm:flex sm:items-center">
+  <div class="sm:w-[50%] sm:pr-10">
     <PageTitle>Путь пациента</PageTitle>
-    <h2 class="text-[20px] font-semibold leading-[24px] lg:text-center">
+    <h2
+      class="text-[20px] font-semibold leading-[24px] sm:text-[15px] sm:leading-[18px] lg:text-center lg:text-[18px] lg:leading-[24px]"
+    >
       Привет, дорогая!<br />Мы создали для тебя гид, который поможет лучше
       узнать особенности пути онкопациента в Беларуси – начиная от постановки
       диагноза и заканчивая качеством твоей жизни в ремиссии
@@ -18,11 +20,11 @@ import PageTitle from "./PageTitle.astro";
       alt="Стрелка вниз"
     />
   </div>
-  <div class="lg:w-[50%]">
+  <div class="sm:w-[50%]">
     <img
       src={mainImage.src}
       alt="Путь пациента"
-      class="w-full h-auto pt-8 lg:py-0"
+      class="w-full h-auto pt-8 sm:py-0"
     />
   </div>
 </div>
