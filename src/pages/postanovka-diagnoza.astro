@@ -1,18 +1,143 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Section from "../components/Section.astro";
+import PageTitle from "../components/PageTitle.astro";
+import PageNavigationList from "../components/PageNavigation/PageNavigationList.astro";
+import PageNavigationItem from "../components/PageNavigation/PageNavigationItem.astro";
+import Image1 from "../assets/postanovka/image_33.webp";
+import Image2 from "../assets/postanovka/Group_107.webp";
+import Image3 from "../assets/postanovka/pexels-cottonbro-stu.webp";
+import Image4 from "../assets/postanovka/4.webp";
+import Image5 from "../assets/postanovka/5.webp";
+import Image6 from "../assets/postanovka/pexels-tima-miroshni.webp";
+import Image7 from "../assets/postanovka/13.webp";
+import Image8 from "../assets/postanovka/8.webp";
+import Image9 from "../assets/postanovka/15.webp";
+import Image10 from "../assets/postanovka/9.webp";
+import Image11 from "../assets/postanovka/11.webp";
+import Image12 from "../assets/postanovka/14.webp";
+import Image13 from "../assets/postanovka/10.webp";
 ---
 
 <Layout title="[Page Title] - Руками Трогать">
   <Section>
-    <h1
-      class="text-[40px] mb-12 font-semibold leading-[32px] lg:text-[70px] lg:leading-[56px] lg:text-center"
-    >
-      [Page Title]
-    </h1>
+    <PageTitle>Постановка диагноза</PageTitle>
 
     <div class="space-y-6 text-[18px] leading-[26px]">
-      <p>[Content goes here]</p>
+      <PageNavigationList>
+        <PageNavigationItem
+          image={{ src: Image1.src, alt: "Что такое рак" }}
+          link={{
+            href: "/tpost/dg58cuu7t1-chto-takoe-rak",
+            title: "Что такое рак",
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image2.src, alt: "Статистика в мире и Беларуси" }}
+          link={{
+            href: "/tpost/30vtgvvsg1-statistika-v-mire-i-belarusi",
+            title: "Статистика в мире и Беларуси",
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image3.src, alt: "Факторы риска" }}
+          link={{
+            href: "/tpost/rxbvb1dsk1-faktori-riska",
+            title: "Факторы риска",
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image4.src, alt: "Онкологический маршрут" }}
+          link={{
+            href: "/tpost/8fkv901sj1-onkologicheskii-marshrut",
+            title: "Онкологический маршрут",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image5.src,
+            alt: "Алгоритм диагностирования и лечения",
+          }}
+          link={{
+            href: "/tpost/ukir3yyo71-algoritm-diagnostirovaniya-i-lecheniya",
+            title: "Алгоритм диагностирования и лечения",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image6.src,
+            alt: "Кто принимает участие в диагностировании",
+          }}
+          link={{
+            href: "/tpost/d5hfo2dsj1-kto-prinimaet-uchastie-v-diagnostirovani",
+            title: "Кто принимает участие в диагностировании",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image7.src,
+            alt: 'Чек лист "Что спросить у онколога"',
+          }}
+          link={{
+            href: "/tpost/frmjrvt0b1-chek-list-chto-sprosit-u-onkologa",
+            title: 'Чек лист "Что спросить у онколога"',
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image8.src, alt: "Типы и стадии рака" }}
+          link={{
+            href: "/tpost/xppja5fzv1-tipi-i-stadii-raka",
+            title: "Типы и стадии рака",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image9.src,
+            alt: "Иерархия медучереждений Беларуси",
+          }}
+          link={{
+            href: "/tpost/40mxvv9pa1-ierarhiya-meducherezhdenii-belarusi",
+            title: "Иерархия медучереждений Беларуси",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image10.src,
+            alt: "Методы диагностики, доступные в Беларуси",
+          }}
+          link={{
+            href: "/tpost/5sn2kve151-metodi-diagnostiki-dostupnie-v-belarusi",
+            title: "Методы диагностики, доступные в Беларуси",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image11.src,
+            alt: "Контакты и полезные ссылки для онкопациентов",
+          }}
+          link={{
+            href: "/tpost/zf6uy711m1-kontakti-i-poleznie-ssilki-dlya-onkopats",
+            title: "Контакты и полезные ссылки для онкопациентов",
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image12.src, alt: "Телефоны доверия в Беларуси" }}
+          link={{
+            href: "/tpost/9ldvuasdx1-telefoni-doveriya-v-belarusi",
+            title: "Телефоны доверия в Беларуси",
+          }}
+        />
+        <PageNavigationItem
+          image={{
+            src: Image13.src,
+            alt: "Участие в клинических исследованиях",
+          }}
+          link={{
+            href: "/tpost/ebbechaue1-uchastie-v-klinicheskih-issledovaniyah",
+            title: "Участие в клинических исследованиях",
+          }}
+        />
+      </PageNavigationList>
     </div>
   </Section>
 </Layout>

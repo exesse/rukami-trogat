@@ -1,0 +1,28 @@
+---
+const {
+  image: { src, alt },
+  link: { href, title },
+  class: className,
+} = Astro.props;
+---
+
+<li
+  class="rounded-[30px] overflow-hidden bg-[#f7dac9] lg:w-[280px] xl:w-[360px]"
+>
+  <a href={href} title={title} class="group">
+    <div
+      class="w-full overflow-hidden relative h-[300px] sm:h-[500px] lg:h-[300px]"
+    >
+      <img
+        src={src}
+        alt={alt}
+        class="w-full h-full object-cover absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 group-hover:scale-110"
+      />
+    </div>
+    <p
+      class="text-[24px] leading-[31px] p-[30px] font-semibold group-hover:underline"
+    >
+      {title}
+    </p>
+  </a>
+</li>
