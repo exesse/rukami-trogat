@@ -1,8 +1,49 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/postanovka/9.webp";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title='Методы диагностики, доступные в Беларуси - Руками Трогать'>
+  <PostTitle>Методы диагностики, доступные в Беларуси</PostTitle>
+  <!-- TODO: reduce size of image. image too big -->
+  <img src={Image.src} alt="Методы диагностики, доступные в Беларуси" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      В Беларуси уровень лечения онкологических заболеваний достаточно высокий и на сегодняшний день тебе доступны все виды комплексной диагностики.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem><strong>Первичный внешний осмотр — пальпация</strong> (поэтому так важно, чтобы ты сама каждый месяц внимательно осматривала свою грудь и замечала любые изменения), делать это нужно каждый месяц с 5 по 11 день цикла.</PostContentItem>
+  <PostContentItem>
+    <strong>Лучевые методы</strong>
+    <ul class="list-decimal pl-6">
+      <li>Рентген</li>
+      <li>КТ</li>
+      <li>МРТ</li>
+      <li>Маммография</li>
+      <li>УЗИ</li>
+      <li>Радиоизотопные исследования</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Для чего нужны лучевые методы:</strong> они выявляют первичную опухоль, распространенность процесса, регионарные и отдаленные метастазы, для проведения биопсии под контролем лучевых методов и главное - для оценки результатов лечения.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Биопсия</strong> — метод исследования, с помощью которого врач забирает кусочек тканей или жидкость из подозрительного участка молочной железы. Этот кусочек изучают под микроскопом, чтобы выяснить, есть ли в нем злокачественные клетки.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Морфологические методы:</strong> гистологические исследования и иммуногистохимические исследования (маркеры).
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Молекулярно-генетическое исследование:</strong> для женщин с онко-диагнозами, а также здоровым женщинам при наследственном факторе (если РМЖ был у кровных родственников: мамы, бабушки).
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

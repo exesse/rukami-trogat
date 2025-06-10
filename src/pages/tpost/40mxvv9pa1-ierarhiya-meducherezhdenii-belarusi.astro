@@ -1,8 +1,36 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/postanovka/15.webp";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title='Иерархия медучереждений Беларуси - Руками Трогать'>
+  <PostTitle>Иерархия медучереждений Беларуси</PostTitle>
+  <!-- TODO: reduce size of image. image too big -->
+  <img src={Image.src} alt="Иерархия медучереждений Беларуси" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Во всей иерархии онкологических медицинских учреждений во главе стоит Государственное Учреждение Республиканский научно-практический Центр онкологии и медицинской радиологии им. Н.Н.АЛЕКСАНДРОВА по адресу: Республика Беларусь, Минский район, аг. Лесной.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    РНПЦ ОМР им. Н.Н.АЛЕКСАНДРОВА занимает первое место в рейтинге ведущих центров Беларуси. Опыт работы по диагностике и лечению более 60 лет. 
+    В Центре работает 10 доцентов, 12 профессоров, 25 докторов наук, 72 кандидата наук, академик Национальной 
+    академии наук Беларуси. Ссылка на сайт: <a class="underline decoration-solid hover:no-underline" href="https://omr.by/" target="_blank">https://omr.by/</a>.
+  </PostContentItem>
+  <PostContentItem>
+    Далее следуют <a class="underline decoration-solid hover:no-underline" href="https://mgkoc.by/" target="_blank">Минский городской клинический онкологический центр</a>, а также областные онкологические диспансеры: <a class="underline decoration-solid hover:no-underline" href="https://www.oncologybrest.by" target="_blank">Брестский</a>, <a class="underline decoration-solid hover:no-underline" href="https://onco.by/" target="_blank">Витебский</a>, <a class="underline decoration-solid hover:no-underline" href="https://gokod.by/" target="_blank">Гомельский</a>, <a class="underline decoration-solid hover:no-underline" href="https://gocb.by/ru/struktura-kliniki/onkodispansernoe-otdelenie.html" target="_blank">Гродненский</a> и <a class="underline decoration-solid hover:no-underline" href="http://www.mood.by/" target="_blank">Могилевский</a>.
+  </PostContentItem>
+  <PostContentItem>
+    Также есть межрайонные онкологические диспансеры, например в <a class="underline decoration-solid hover:no-underline" href="https://pcp.by/mezhrajonnyj-onkologicheskij-dispanse/obshhaja-informacija/" target="_blank">Пинске</a>, <a class="underline decoration-solid hover:no-underline" href="https://bmod.by/" target="_blank">Бобруйске</a>, <a class="underline decoration-solid hover:no-underline" href="https://polmed.by/ru/podrazdeleniya/mezhrajonnyj-onkologicheskij-dispanser" target="_blank">Полоцке</a>. В более мелких городах есть кабинеты онколога или врач при центральной районной больнице.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

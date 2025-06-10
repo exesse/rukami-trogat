@@ -1,8 +1,52 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/postanovka/8.webp";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Типы и стадии рака - Руками Трогать">
+  <PostTitle>Типы и стадии рака</PostTitle>
+  <!-- TODO: reduce size of image. image too big -->
+  <img src={Image.src} alt="Типы и стадии рака" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Стадия болезни определяется в зависимости от размера опухоли, от того, есть ли опухолевые клетки в лимфатических узлах и метастазы в других органах.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>В зависимости от распространенности рак может быть <strong>преинвазивным (in situ)</strong> — очень маленькая опухоль, которая не успела прорасти в кровеносную систему и которая не требует никакого лечения, кроме удаления.</PostContentItem>
+  <PostContentItem>
+    Или <strong>инвазивным (in situ)</strong> — когда опухоль уже начала прорастать, а значит, могла дать метастазы.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    От вида рака напрямую зависит и лечение. Чаще всего речь идет о молекулярной таксономии и выделяют 4 подтипа:
+    <ul class="list-decimal pl-6">
+      <li><strong>Люминальный подтип A (30—45 %)</strong>: эстроген-зависимые малоагрессивные опухоли, избытка экспрессии рецепторов белка HER2 нет;</li>
+      <li><strong>Люминальный подтип B (14—18 %)</strong>: эстроген-зависимые агрессивные опухоли, выражена амплификация онкогена HER2;</li>
+      <li><strong>HER2-позитивный подтип (8—15 %)</strong>: эстроген-независимые агрессивные опухоли, выражена амплификация онкогена HER2;</li>
+      <li><strong>«Triple negative» подтип (27—39 %)</strong>: эстроген-независимые агрессивные опухоли, избытка экспрессии рецепторов белка HER2 нет.</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Именно от этих подтипов чаще всего (за исключением редких видов) зависит протокол и стратегия лечения.
+  </PostContentItem>
+  <PostContentItem>
+    Чтобы финально определить стадию и тип рака, онколог назначает дополнительное обследование, которое может выявить региональные и отдаленные метастазы рака молочной железы: рентгенографию грудной клетки, осмотр гинеколога, УЗИ печени, надпочечников, яичников, щитовидной железы, развернутый анализ крови. При необходимости – компьютерную томографию, сканирование костей скелета, МРТ и др. — все очень индивидуально, каждый случай уникален.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>
+
+
