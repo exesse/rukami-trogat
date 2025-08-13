@@ -1,8 +1,77 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/postanovka/11.webp";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Контакты и полезные ссылки для онкопациентов">
+  <PostTitle>Контакты и полезные ссылки для онкопациентов</PostTitle>
+  <!-- TODO: reduce size of image. image too big -->
+  <img src={Image.src} alt="Контакты и полезные ссылки для онкопациентов" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Дорогая, мы собрали для тебя список сайтов и сервисов, где ты сможешь найти больше информации, начать самообразовываться по теме онкологии, а также найдешь единомышленников и поддерживающие сообщества.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    Это далеко не полный список, но мы будем стараться его регулярно пополнять.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Очень много информации можно изучать, подписавшись на аккаунты в Instagram, например:
+    <ul class="list-none pl-6">
+      <li><strong><a href="https://www.instagram.com/rykamitrogat/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Руками трогать</a></strong> — Общественная инициатива, популяризирующая раннюю диагностику, как основной метод борьбы с РМЖ.</li>
+      <li><strong><a href="https://www.instagram.com/re.missiya.bel/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Remissia_bel</a></strong> — поддерживающая среда, консультации, арт-терапия и большая команда онковыздоравливающих.</li>
+      <li><strong><a href="https://www.instagram.com/life_psyholog/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Онко-психолог Татьяна Хорошунова</a></strong> — эфиры, посты, много практических советов по психологической помощи для онкопациентов и их родных.</li>
+      <li><strong><a href="https://www.instagram.com/oncologica.ru/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Онкологика</a></strong> — Российский фонд, основанный бизнес-леди, победившей рак.</li>
+      <!-- <li><strong><a href="https://www.instagram.com/pobedi.rak/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Победи рак</a></strong> — платформа по онкопросвещению и группам равных консультантов для пациентов и их родных.</li> -->
+      <li><strong><a href="https://www.instagram.com/mammo.logicum/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Доктор Сергей Попович</a></strong> — русскоговорящий врач из Германии, рассказывает о передовых методах диагностики и лечения, автор курса “Школа Пациента”.</li>
+      <li><strong><a href="https://www.instagram.com/makarov_ig/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">Врач-лимфолог Иван Макаров</a></strong> — востребованный специалист-лимфолог, автор книг о лимфе, редактор журнала LIMPHA.</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Информационные и поддерживающие ресурсы:</strong>
+    <ul class="list-disc pl-6">
+      <li>
+        <a href="https://oncopatient.by/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">https://oncopatient.by/</a> — Первый беларуский центр поддержки пациентов “Во имя жизни”.
+      </li>
+      <li>
+        <a href="https://www.thisislivingwithcancer.by/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">https://www.thisislivingwithcancer.by/</a> — Приложение для онкопациентов и полезная информация по реабилитации, питанию, психологической самопомощи, для Беларуси доступно приложение в AppStore.
+      </li>
+      <li>
+        <a href="https://vse.nenaprasno.ru/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">https://vse.nenaprasno.ru/</a> — Просветительский онкопортал, можно пройти тесты, получить онлайн-консультацию и пр.
+      </li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Каналы в Telegram:</strong>
+    <ul class="list-disc pl-6">
+      <!-- <li><a href="https://t.me/lymphedemavmeste" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline"><strong>Лимфедема: мы вместе</strong></a> лимфолога Ровной А.В.</li>
+      <li><a href="https://t.me/oncologica_onco" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline"><strong>Онкологика подопечным</strong></a></li> -->
+      <li>Большая коллекция каналов <a href="https://taplink.cc/ligaadminov" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline"><strong>“Лига админов”</strong></a> по всем видам рака (в основном российские, но есть и раздел Беларусь).</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Viber:</strong>
+    <ul class="list-disc pl-6">
+      <li><strong>Сообщество “Розовый круг”</strong> в Viber — вступить можно только по личному приглашению участниц (на данный момент их почти 800). Не стесняйся спросить у своих знакомых или соседок по палате о нем.</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>

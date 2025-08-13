@@ -1,8 +1,37 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/postanovka/14.webp";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <h1>Что такое рак</h1>
-  <p>Content for the page goes here.</p>
+<Layout title="Телефоны доверия для экстренной психологической помощи">
+  <PostTitle>Телефоны доверия для экстренной психологической помощи</PostTitle>
+  <img src={Image.src} alt="Телефоны доверия" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Информация о круглосуточных телефонах доверия для оказания экстренной психологической помощи, размещенная на сайте РНПЦ им. Александрова.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <ul class="list-disc pl-6">
+      <li><strong>Брестская область:</strong> <a href="tel:80162255727" class="underline decoration-solid hover:no-underline">80162 255727</a></li>
+      <li><strong>Витебская область:</strong> <a href="tel:80212616060" class="underline decoration-solid hover:no-underline">80212 616060</a></li>
+      <li><strong>Гомельская область:</strong> <a href="tel:80232315161" class="underline decoration-solid hover:no-underline">80232 315161</a></li>
+      <li><strong>Гродненская область:</strong> <a href="tel:80152170" class="underline decoration-solid hover:no-underline">80152 170</a>, <a href="tel:80152752390" class="underline decoration-solid hover:no-underline">80152 752390</a></li>
+      <li><strong>г. Минск для взрослых:</strong> <a href="tel:80173524444" class="underline decoration-solid hover:no-underline">8017 3524444</a>, <a href="tel:80173044370" class="underline decoration-solid hover:no-underline">8017 3044370</a></li>
+      <li><strong>г. Минск для детей:</strong> <a href="tel:80172630303" class="underline decoration-solid hover:no-underline">8017 2630303</a></li>
+      <li><strong>Минская область:</strong> <a href="tel:80172702401" class="underline decoration-solid hover:no-underline">8017 2702401</a>, <a href="tel:80298990401" class="underline decoration-solid hover:no-underline">8029 8990401</a></li>
+      <li><strong>Могилевская область:</strong> <a href="tel:80222711161" class="underline decoration-solid hover:no-underline">80222 711161</a></li>
+      <li><strong>Республиканская детская телефонная линия:</strong> <a href="tel:88011001611" class="underline decoration-solid hover:no-underline">8-801-100-1611</a></li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
 </Layout>
