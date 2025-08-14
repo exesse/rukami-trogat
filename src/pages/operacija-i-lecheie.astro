@@ -2,14 +2,121 @@
 import Layout from "../layouts/Layout.astro";
 import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
+import PageNavigationList from "../components/PageNavigation/PageNavigationList.astro";
+import PageNavigationItem from "../components/PageNavigation/PageNavigationItem.astro";
+import Image1 from "../assets/operacija/1.png";
+import Image2 from "../assets/operacija/2.png";
+import Image3 from "../assets/operacija/3.png";
+import Image4 from "../assets/operacija/4.png";
+import Image5 from "../assets/operacija/5.png";
+import Image6 from "../assets/operacija/6.png";
+import Image7 from "../assets/operacija/7.png";
+import Image8 from "../assets/operacija/8.png";
+import Image9 from "../assets/operacija/9.png";
+import Image10 from "../assets/operacija/10.png";
+import Image11 from "../assets/operacija/11.png";
+import Image12 from "../assets/operacija/12.png";
+import Image13 from "../assets/operacija/13.png";
 ---
 
-<Layout title="[Page Title] - Руками Трогать">
+<Layout title="Операция и лечение - Руками Трогать">
   <Section>
-    <PageTitle> [Page Title] </PageTitle>
+    <PageTitle>Операция и лечение</PageTitle>
 
     <div class="space-y-6 text-[18px] leading-[26px]">
-      <p>[Content goes here]</p>
+      <PageNavigationList>
+        <PageNavigationItem
+          image={{ src: Image1.src, alt: "Протокол лечения" }}
+          link={{
+            href: "/tpost/ee7m50sju1-protokol-lecheniya",
+            title: "Протокол лечения"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image2.src, alt: "Бесплатные и платные услуги" }}
+          link={{
+            href: "/tpost/giv7fnnag1-besplatnie-i-platnie-uslugi",
+            title: "Бесплатные и платные услуги"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image3.src, alt: "Классификация TNM" }}
+          link={{
+            href: "/tpost/gsl8ufj5c1-klassifikatsiya-tnm",
+            title: "Классификация TNM"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image4.src, alt: "Какое бывает лечение" }}
+          link={{
+            href: "/tpost/lhn1l0yuf1-kakoe-bivaet-lechenie",
+            title: "Какое бывает лечение"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image5.src, alt: "РМЖ в период беременности" }}
+          link={{
+            href: "/tpost/zjzi4kmcg1-rmzh-v-period-beremennosti",
+            title: "РМЖ в период беременности"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image6.src, alt: 'Операция "Анджелины Джоли"' }}
+          link={{
+            href: "/tpost/l8llo3tng1-operatsiya-andzhelini-dzholi",
+            title: 'Операция "Анджелины Джоли"'
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image7.src, alt: 'Подготовка: что брать с собой в больницу. Чек-лист' }}
+          link={{
+            href: "/tpost/8jbckafc11-podgotovka-chto-brat-s-soboi-v-bolnitsu",
+            title: "Подготовка: что брать с собой в больницу. Чек-лист"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image8.src, alt: "Как близким поддержать тебя во время лечения" }}
+          link={{
+            href: "/tpost/2yoa6r2y71-kak-blizkim-podderzhat-tebya-vo-vremya-l",
+            title: "Как близким поддержать тебя во время лечения"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image9.src, alt: "Планируй время на больничный" }}
+          link={{
+            href: "/tpost/0nrezu4ru1-planirui-vremya-na-bolnichnii",
+            title: "Планируй время на больничный"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image10.src, alt: "Побочные эффекты. К чему быть готовой?" }}
+          link={{
+            href: "/tpost/49zveicx21-pobochnie-effekti-k-chemu-bit-gotovoi",
+            title: "Побочные эффекты. К чему быть готовой?"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image11.src, alt: "Лимфостаз" }}
+          link={{
+            href: "/tpost/hmy47kvti1-limfostaz",
+            title: "Лимфостаз"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image12.src, alt: "Послеоперационный период" }}
+          link={{
+            href: "/tpost/2inij3idd1-posleoperatsionnii-period",
+            title: "Послеоперационный период"
+          }}
+        />
+        <PageNavigationItem
+          image={{ src: Image13.src, alt: "Наблюдение, сроки обследований" }}
+          link={{
+            href: "/tpost/yozi37xml1-nablyudenie-sroki-obsledovanii",
+            title: "Наблюдение, сроки обследований"
+          }}
+        />
+      </PageNavigationList>
     </div>
   </Section>
 </Layout>

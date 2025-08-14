@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import PostTitle from '../../components/PostTitle.astro'
+import Divider from '../../components/Divider.astro'
+import PostContentItem from '../../components/PostContentItem.astro'
+import PostTitleDescription from '../../components/PostTitleDescription.astro'
+import Image from '../../assets/operacija/13.png'
+---
+
+<Layout title="Наблюдение, сроки обследований - Руками Трогать">
+  <PostTitle>Наблюдение, сроки обследований</PostTitle>
+  <img src={Image.src} alt="Наблюдение, сроки обследований" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Как часто и какие обследования нужны после операции? Официальные рекомендации и протоколы.
+    </h2>
+  </PostTitleDescription>
+
+  <PostContentItem>
+    Что говорит о сроках контрольных наблюдениях после операции Протокол лечения, утвержденный в Беларуси на сегодняшний день.
+  </PostContentItem>
+
+  <PostContentItem>
+    После окончания специального лечения в течение первых двух лет женщины наблюдаются <strong>каждые 3 месяца</strong>, со 2-го по 5-й год – <strong>1 раз в 6 месяцев</strong>, затем <strong>1 раз в год пожизненно</strong>.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+
+  <PostContentItem>
+    Наблюдение осуществляется в областных и межрайонных онкологических диспансерах по месту жительства. При каждом посещении необходимы осмотр онкологом, гинекологом, УЗИ молочных желез и регионарных зон.
+  </PostContentItem>
+
+  <PostContentItem>
+    При назначении тамоксифена перед началом его приема необходимо выполнить эндовагинальное УЗИ. Контроль за состоянием эндометрия осуществляется <strong>1 раз в 3 месяца</strong>. УЗИ органов брюшной полости и таза выполняется <strong>1 раз в 6 месяцев</strong> в течение первых 2-х лет, затем <strong>1 раз в год</strong>. Рентгенологическое исследование органов грудной клетки, маммография необходимо выполнять <strong>1 раз в год</strong>.
+  </PostContentItem>
+
+  <PostContentItem>
+    Женщинам, принимающим ингибиторы ароматазы, с целью контроля за плотностью костной ткани рекомендуется <strong>1 раз в 2 года</strong> выполнять денситометрию.
+  </PostContentItem>
+
+  <PostContentItem>
+    В случае появления признаков развития лимфедемы необходима консультация врача-реабилитолога.
+  </PostContentItem>
+
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>

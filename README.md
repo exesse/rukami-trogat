@@ -34,3 +34,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## TODO
+
+1. Add block quote on a content pages
+2. Review all pages. Change text formats. Make strong where it's really needed. Check h2-h6

@@ -1,0 +1,39 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/operacija/2.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+---
+
+<Layout title="Бесплатные и платные услуги - Руками Трогать">
+  <PostTitle>Бесплатные и платные услуги</PostTitle>
+  <img src={Image.src} alt="Бесплатные и платные услуги" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      За что нужно платить и нужно ли вообще?
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    Официально, медицинские услуги в Беларуси бесплатные, особенно если речь идет об онкологии. Но некоторые первоначальные обследования (до постановки диагноза) иногда бывает быстрее пройти на платной основе – например, УЗИ и маммографию.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Это можно сделать в некоторых частных медицинских центрах или в государственных больницах на платной основе. Вся информация о ближайших доступных датах на платные услуги есть по телефону <strong>131</strong>. Кстати, ежегодно мы с командой “Руками трогать” выпускаем гайд с местами, контактами и ценами по всей Беларуси. Выбирай и сравнивай <a href="https://dzen.ru/media/id/61671ec8bab848028d51e58e/ejegodnyi-gid-rukami-trogat-gde-proiti-uzi-molochnoi-jelezy-v-belarusi-i-skolko-eto-stoit-spoiler-ceny-prejnie-a-gdeto-daje-nije-63494b92f0341b2e4c839a71" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">здесь</a>.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>С момента постановки диагноза</strong> все необходимые по протоколу обследования, анализы, прием врачей на <strong>бесплатной основе</strong>. Это касается как основного лечения, так и процедур, направленных на лечение некоторых побочных действий лекарств. Лекарства, положенные по стандартному протоколу или протоколу клинических испытаний предоставляются тоже бесплатно. В процессе клинических испытаний все принимаемые дополнительно препараты необходимо согласовывать с врачом.
+  </PostContentItem>
+  <PostContentItem>
+    Если протокол стандартный, некоторые лекарства <strong>по согласованию с доктором можно заменить на те, которые пациент покупает за свой счет</strong>. Например, после лечения в некоторых случаях надо 5 лет принимать или тамоксифен, или фарестон. У них немного разные побочные действия, кому-то лучше подходит тамоксифен, на который врач дает бесплатные рецепты. Некоторые самостоятельно приобретают фарестон.
+  </PostContentItem>
+  <PostContentItem>
+    Если в качестве хирургического лечения выбрана мастэктомия с имплантацией — <strong>импланты приобретаются за свой счет, сама операция — бесплатна</strong>. Компрессионные чулки и белье также приобретаются самостоятельно.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>
