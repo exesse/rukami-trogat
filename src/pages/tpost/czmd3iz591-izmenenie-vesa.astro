@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+import Image from "../../assets/remissia/5.png";
+---
+
+<Layout title="Изменение веса - Руками Трогать">
+  <PostTitle>Изменение веса</PostTitle>
+  <img src={Image.src} alt="Изменение веса" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Есть стереотип, что при тяжелой болезни и сложном лечении пациентка должна похудеть. Но это не всегда так.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    При химиотерапии на организм вливают также и <strong>сопровождающие лечение препараты</strong> — противовоспалительные, антигистаминные и другие.
+  </PostContentItem>
+  <PostContentItem>
+    Одним из них является дексаметазон, а у него есть <strong>собственный побочный эффект</strong> — повышенный аппетит и замедленный обмен веществ. Поэтому задуматься о весе надо еще на стадии лечения.
+  </PostContentItem>
+  <PostContentItem>
+    Быстрое снижение веса, как и быстрый его набор уменьшают эффективность лечения и замедляют восстановление в ремиссии. <strong>Принципы здорового питания помогут его облегчить и сберечь твою фигуру.</strong>
+  </PostContentItem>
+  <PostContentItem>
+    При гормонозависимом раке на увеличение веса влияет также прием тамоксифена, который снижает выработку эстрогена. Поэтому сбросить лишний вес непросто, лучше <strong>следить за ним с самого начала.</strong> Это важно не только из соображений красоты. Химия негативно влияет на сердце и печень, и ожирение только усугубляет их состояние.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>

@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+import Image from "../../assets/remissia/7.png";
+---
+
+<Layout title="Климактерический синдром (приливы) - Руками Трогать">
+  <PostTitle>Климактерический синдром (приливы)</PostTitle>
+  <img src={Image.src} alt="Климактерический синдром (приливы)" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Прием тамоксифена может вызвать климактерический синдром (обычно его называют приливами).
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    Причиной развития климактерического синдрома является искусственное снижение активности и количества эстрогенов — женских половых гормонов в результате медикаментозного угасания функции яичников.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Заместительная гормональная терапия онкопациентам ПРОТИВОПОКАЗАНА.</strong>
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Профилактика климактерического синдрома</strong>
+  </PostContentItem>
+  <PostContentItem>
+    <ul class="list-disc pl-6">
+      <li>Здоровый образ жизни:</li>
+      <li>Рациональное и сбалансированное питание (употребление в пищу продуктов, богатых витаминами, белками, жирами и углеводами, минеральными веществами);</li>
+      <li>Контроль массы тела;</li>
+      <li>Регулярные физические нагрузки;</li>
+      <li>Закаливание организма (пожалуйста, не переусердствуй);</li>
+      <li>Исключение чрезмерных физических и психоэмоциональных нагрузок;</li>
+      <li>Своевременное и достаточное лечение инфекционно-воспалительных и простудных заболеваний.</li>
+      <li>Соблюдение схемы приема гормональных препаратов.</li>
+      <li>Регулярное посещение гинеколога (один раз в три месяца).</li>
+    </ul>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>

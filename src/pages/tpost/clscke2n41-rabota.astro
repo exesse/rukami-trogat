@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+import Image from "../../assets/remissia/15.png";
+---
+
+<Layout title="Работа - Руками Трогать">
+  <PostTitle>Работа</PostTitle>
+  <img src={Image.src} alt="Работа" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Отказываться ли от работы на время лечения или нет — решает каждый для себя сам. Здесь нужно смотреть по самочувствию, финансовому и семейному положению. Некоторым женщинам важно оставаться на работе в привычном ритме во время болезни, и многим это удается. Но кому-то лучше сделать паузу и восстановиться.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Работать или не работать при проведении химиотерапии лучше решать индивидуально. Многим состояние позволяет не только работать удаленно, но и выходить на работу. Зависит от индивидуальной переносимости лекарств, частоты капельниц, характера самой работы. Тоже самое можно сказать и про операцию — зависит от ее объема. Иногда химиотерапия проводится и после операции, и это замедляет скорость восстановления достаточно заметно. Относительное послеоперационное восстановление может занять от одного месяца до полугода.
+  </PostContentItem>
+  <PostContentItem>
+    <strong>Уволить вас во время болезни не имеют права</strong>, так что если будут уговаривать написать заявление, вы можете жестко отказаться. Но все же постарайтесь распределить свои силы, оценить свои возможности. Может быть, взять часть работы на дом, если это возможно.
+  </PostContentItem>
+  <PostContentItem>
+    Берегите себя и старайтесь <strong>не делать больше, чем необходимо</strong>.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>

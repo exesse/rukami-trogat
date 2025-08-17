@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+import Image from "../../assets/remissia/13.png";
+---
+
+<Layout title="Страх рецидива. Как справляться - Руками Трогать">
+  <PostTitle>Страх рецидива. Как справляться</PostTitle>
+  <img src={Image.src} alt="Страх рецидива. Как справляться" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Предлагаем тебе ознакомиться с серией видео-лекций, прочитанных психологом Инной Малаш на вебинаре для онкопациентов, который был организован Центром поддержки онкопациентов “Во имя жизни” – этот вебинар довольно широко раскрывает тему и может заменить тебе полноценные консультации дефицитного специалиста.<br />
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Курс состоит из трех видео, вот ссылки на источник:
+  </PostContentItem>
+  <PostContentItem>
+    <a href="https://oncopatient.by/strax-recidiva-mozhno-li-vernut-samoobladanie-video-otchet/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">
+      Страх рецидива: можно ли вернуть самообладание
+    </a>
+    <iframe class="mt-2" width="560" height="315" src="https://www.youtube.com/embed/PwkVQ5i8Mxw?si=PAFedfEsLWKR52ST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </PostContentItem>
+  <PostContentItem>
+    <a href="https://oncopatient.by/strax-recidiva-trevozhnyj-razum-audio-i-video-otchet/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">
+      Страх рецидива: тревожный ум
+    </a>
+    <iframe class="mt-2" width="560" height="315" src="https://www.youtube.com/embed/u1C4D3mOy2s?si=VnIYHGyOReVVi5Oh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </PostContentItem>
+  <PostContentItem>
+    <a href="https://oncopatient.by/strax-recidiva-bespokojstvo-ili-ugroza-neopredelyonnosti-audio-i-video-otchet/" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">
+      Страх рецидива: беспокойство или угроза неопределённости.
+    </a>
+    <iframe class="mt-2" width="560" height="315" src="https://www.youtube.com/embed/OD8QSlWmPkY?si=tUuNrYJRRpqJigQq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>

@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostTitle from "../../components/PostTitle.astro";
+import Image from "../../assets/remissia/1.png";
+import Divider from "../../components/Divider.astro";
+import PostContentItem from "../../components/PostContentItem.astro";
+import PostTitleDescription from "../../components/PostTitleDescription.astro";
+---
+
+<Layout title="Какие изменения тебя ждут и как к ним подготовиться - Руками Трогать">
+  <PostTitle>Какие изменения тебя ждут и как к ним подготовиться</PostTitle>
+  <img src={Image.src} alt="Какие изменения тебя ждут и как к ним подготовиться" class="mb-12 w-full" />
+  <PostTitleDescription>
+    <h2 class="mb-5">
+      Дорогая, знай, что изменения коснутся кого-то в большей, кого-то в меньшей степени, но мы хотим, чтобы ты была к ним готова и имела под рукой практические советы и лайфхаки, как упростить себе жизнь или обновить свою новую ежедневную рутину.
+    </h2>
+  </PostTitleDescription>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+  <PostContentItem>
+    Многие из этих изменений связаны с побочным действием химиотерапевтических и гормональных препаратов. Организм каждой из нас индивидуален и многое зависит и от диагноза, и от твоего общего состояния.
+  </PostContentItem>
+  <PostContentItem>
+    У тебя могут быть изменения как <strong>внешние</strong>: изменения в весе (как в сторону снижения, так и увеличения), выпадение волос, сухость кожи, так и <strong>внутренние</strong>: изменение гормонального фона, психологического состояния, работы лимфатической системы, строения костной ткани и прочих. О них подробнее мы поговорим в следующих разделах.
+  </PostContentItem>
+  <PostContentItem>
+    Самым сложным (особенно с моральной и эмоциональной точки зрения), но в то же время самым мало обсуждаемым изменением является выпадение волос. Далее постараемся рассказать о нем и остальных более развернуто.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
+</Layout>
