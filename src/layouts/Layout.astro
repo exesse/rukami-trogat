@@ -2,45 +2,58 @@
 import boobsImage from "../assets/main/boobs.png";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-
 import "@fontsource-variable/manrope";
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "Руками Трогать — медицинская информация, поддержка, опыт.",
+  shareImage = "/favicon.ico",
+  pageUrl = "https://rukami-trogat.by",
+  keywords = "онкология, поддержка, Руками Трогать, лечение, здоровье"
+} = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ru" class="font-manrope w-full h-full m-0">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Руками Трогать" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta property="og:site_name" content="Руками Трогать" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={shareImage} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={shareImage} />
+    <meta name="twitter:url" content={pageUrl} />
+
+    <link rel="canonical" href={pageUrl} />
   </head>
-  <body class="bg-[#f5f4ef]">
+  <body class="bg-[#f5f4ef] w-full h-full m-0">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Перейти к содержимому</a>
     <div class="container m-auto min-h-screen">
       <Header />
-      <div class="min-h-screen pt-10 sm:pt-[120px] lg:pt-[60px] pb-6">
+      <main id="main-content" class="min-h-screen pt-10 sm:pt-[120px] lg:pt-[60px] pb-6">
         <slot />
-      </div>
+      </main>
       <Footer />
     </div>
     <div>
       <div
         class="w-full mx-auto h-[20px] bg-[#f5f4ef] rounded-b-[40px] z-10 relative mb-[-20px]"
-      >
-      </div>
-      <img src={boobsImage.src} alt="Руками Трогать" class="w-full" />
+      />
+      <img src={boobsImage.src} alt="Стилизованные женские груди с сердечками вместо сосков" class="w-full" />
     </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: "Manrope Variable", cursive;
-  }
-</style>

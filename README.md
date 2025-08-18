@@ -41,3 +41,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 2. Review all pages. Change text formats. Make strong where it's really needed. Check h2-h6
 3. Breadcrumbs
 4. 950px width something goes wrong with images on menu pages
+5. Add meta tags + social sharing
+6. Change alt text for all images
+7. Check accessability
