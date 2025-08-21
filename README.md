@@ -42,4 +42,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 3. 950px width something goes wrong with images on menu pages
 4. Add meta tags + social sharing to every page
 5. Change alt text for all images
-6. Check accessability
+6. Check lighthouse performance

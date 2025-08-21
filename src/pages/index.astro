@@ -50,7 +50,7 @@ import Player from "../components/Player.astro";
       <MainNavigationItem>
         <MainNavigationCard
           class="bg-[#f7dac9] mb-5 lg:mb-0"
-          image={{ src: diagnozImage.src, alt: "Постановка диагноза" }}
+          image={{ src: diagnozImage.src, alt: "Улыбающаяся врач со стетоскопом на шее. На ней белый халат, создающий впечатление профессионализма и заботы. На заднем плане — медицинская карта." }}
           link={{
             href: "/postanovka-diagnoza",
             title:
@@ -61,7 +61,7 @@ import Player from "../components/Player.astro";
       <MainNavigationItem>
         <MainNavigationCard
           class="bg-[#d2c5bc] mb-5 lg:mb-0"
-          image={{ src: operacijaImage.src, alt: "Операция и лечение" }}
+          image={{ src: operacijaImage.src, alt: "Мужчина натягивает розовую рубашку через голову в светлой ванной комнате с матовыми окнами. Сцена создаёт ощущение обыденности и уединённости." }}
           link={{
             href: "/operacija-i-lecheie",
             title:
@@ -72,7 +72,7 @@ import Player from "../components/Player.astro";
       <MainNavigationItem>
         <MainNavigationCard
           class="bg-[#e1d2e1]"
-          image={{ src: remissijaImage.src, alt: "Жизнь после и ремиссия" }}
+          image={{ src: remissijaImage.src, alt: "Пожилая женщина с короткими седыми волосами мягко улыбается на фоне пышных зеленых растений. На ней коричневый кардиган и узорчатая блузка, излучающие спокойствие и тепло." }}
           link={{
             href: "/zhizn-posle-remissija",
             title: "Узнайте о жизни после лечения и периоде ремиссии",
@@ -97,14 +97,14 @@ import Player from "../components/Player.astro";
         title="Истории женщин о принятии, мотивации и жизни после болезни"
         poster={{
           src: coverImage.src,
-          alt: "Истории женщин о принятии, мотивации и жизни после болезни",
+          alt: "На розовом фоне сидит человек с короткой стрижкой, в очках и полосатой рубашке. Он выглядит задумчивым и расслабленным.",
         }}
       />
     </div>
   </Section>
   <Divider class="mb-6 lg:mb-14 xl:mb-20" id="about"/>
   <Section>
-    <img src={Questions.src} alt="Вопросы" class="m-auto mt-10 mb-6 w-[88px]" />
+    <img src={Questions.src} aria-hidden="true" alt="Вопросы" class="m-auto mt-10 mb-6 w-[88px]" />
     <h2
       class="text-center text-[40px] font-semibold leading-[40px] lg:text-[45px] lg:leading-[45px] xl:text-[50px] xl:leading-[50px] 2xl:text-[60px] 2xl:leading-[60px]"
     >
