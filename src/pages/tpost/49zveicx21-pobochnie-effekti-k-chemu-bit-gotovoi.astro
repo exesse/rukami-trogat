@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/10.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Побочные эффекты. К чему быть готовой?";
 ---
 
-<Layout title="Побочные эффекты. К чему быть готовой? - Руками Трогать">
-  <PostTitle>Побочные эффекты. К чему быть готовой?</PostTitle>
-  <img src={Image.src} alt="Побочные эффекты" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Все противоопухолевые химиотерапевтические препараты по своему принципу действия являются мощнейшими клеточными ядами или токсинами, губительно воздействующими на быстро делящиеся клетки злокачественных опухолей при сравнительно меньшем отрицательном повреждающем воздействии на здоровые быстро делящиеся клетки и ткани организма хозяина, носителя злокачественной опухоли.

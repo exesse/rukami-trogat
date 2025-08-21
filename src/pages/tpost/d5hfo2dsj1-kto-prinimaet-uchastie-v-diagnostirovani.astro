@@ -5,13 +5,15 @@ import Image from "../../assets/posts/participants.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Кто принимает участие в диагностировании";
 ---
 
-<Layout title="Кто принимает участие в диагностировании - Руками Трогать">
-  <PostTitle>Кто принимает участие в диагностировании</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <img
     src={Image.src}
-    alt="Кто принимает участие в диагностировании"
+    alt={title}
     class="mb-12 w-full"
   />
   <PostTitleDescription>

@@ -5,11 +5,13 @@ import Divider from '../../components/Divider.astro'
 import PostContentItem from '../../components/PostContentItem.astro'
 import PostTitleDescription from '../../components/PostTitleDescription.astro'
 import Image from '../../assets/operacija/12.png'
+
+const pageTitle = "Послеоперационный период";
 ---
 
-<Layout title="Послеоперационный период - Руками Трогать">
-  <PostTitle>Послеоперационный период</PostTitle>
-  <img src={Image.src} alt="Послеоперационный период" class="mb-12 w-full" />
+<Layout title={pageTitle}>
+  <PostTitle>{pageTitle}</PostTitle>
+  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Восстановление, реабилитация и профилактика осложнений после операции

@@ -5,11 +5,13 @@ import Image from "../../assets/posts/map.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Онкологический маршрут";
 ---
 
-<Layout title="Онкологический маршрут - Руками Трогать">
-  <PostTitle>Онкологический маршрут</PostTitle>
-  <img src={Image.src} alt="Онкологический маршрут" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Онкологический маршрут — это твой план лечения и медицинской помощи при

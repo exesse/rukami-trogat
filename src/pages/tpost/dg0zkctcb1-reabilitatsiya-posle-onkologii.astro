@@ -4,12 +4,14 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/3.png"; // замените на актуальное изображение
+import Image from "../../assets/remissia/3.png"; // TODO замените на актуальное изображение
+
+const title = "Реабилитация после онкологии";
 ---
 
-<Layout title="Реабилитация после онкологии - Руками Трогать">
-  <PostTitle>Реабилитация после онкологии</PostTitle>
-  <img src={Image.src} alt="Реабилитация после онкологии" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       К сожалению, в нашей стране не принято уделять должное внимание реабилитации после лечения. Врачи-онкологи редко говорят своим пациенткам о том, что реабилитация нужна и даже показана, ведь их «зона ответственности» ограничивается лечением основного заболевания, а для периода после нужны другие специалисты, и их в Беларуси несравнимо мало по отношению к количеству онко-пациентов.

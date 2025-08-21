@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/10.png";
+
+const title = "Кому и зачем нужно носить рукав";
 ---
 
-<Layout title="Кому и зачем нужно носить рукав - Руками Трогать">
-  <PostTitle>Кому и зачем нужно носить рукав</PostTitle>
-  <img src={Image.src} alt="Кому и зачем нужно носить рукав" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       В большинстве случаев при операции РМЖ удаляют и регионарные лимфоузлы, с этим связан риск развития лимфатического отека (лимфедемы).

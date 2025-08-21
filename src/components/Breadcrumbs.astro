@@ -1,0 +1,20 @@
+---
+const { items = [] } = Astro.props;
+---
+<nav aria-label="Хлебные крошки" class="breadcrumbs mb-4 mt-4">
+  <ol class="flex flex-wrap gap-0 text-sm text-black">
+    {items.map(({ title, href }: {
+        title: string;
+        href: string;
+    }, i: number) => (
+      <li>
+        {i < items.length - 1 ? (
+          <a href={href} class="underline hover:no-underline">{title}</a>
+        ) : (
+          <span aria-current="page" class="text-gray-500">{title}</span>
+        )}
+        {i < items.length - 1 && <span class="mx-1" aria-hidden="true">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>

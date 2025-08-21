@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/11.png";
+
+const title = "Твои новые регулярные чек-апы";
 ---
 
-<Layout title="Твои новые регулярные чек-апы - Руками Трогать">
-  <PostTitle>Твои новые регулярные чек-апы</PostTitle>
-  <img src={Image.src} alt="Твои новые регулярные чек-апы" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, все очень индивидуально, мы рекомендуем тебе самостоятельно контролировать действия, согласно Протокола, вероятно, придется добавить что-то еще по индивидуальным показаниям (гормнональный фон, другие хронические заболевания).

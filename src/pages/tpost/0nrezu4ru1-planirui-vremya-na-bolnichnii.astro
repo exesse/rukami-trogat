@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/9.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const pageTitle = "Планируй время на больничный"
 ---
 
-<Layout title="Планируй время на больничный - Руками Трогать">
-  <PostTitle>Планируй время на больничный</PostTitle>
-  <img src={Image.src} alt="Планируй время на больничный" class="mb-12 w-full" />
+<Layout title={pageTitle}>
+  <PostTitle>{pageTitle}</PostTitle>
+  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, сейчас как никогда важно поставить себя на первое место и осознать, что путь лечения будет нескорый.

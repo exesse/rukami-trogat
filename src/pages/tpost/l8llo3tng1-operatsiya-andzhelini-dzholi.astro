@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/6.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Операция \"Анджелины Джоли\"";
 ---
 
-<Layout title='Операция "Анджелины Джоли" - Руками Трогать'>
-  <PostTitle>Операция "Анджелины Джоли"</PostTitle>
-  <img src={Image.src} alt='Операция "Анджелины Джоли"' class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Профилактическое удаление молочных желез существовало довольно давно, но всемирно известной эта операция стала после того, как ее сделала Анджелина Джоли, поскольку у нее была высокая вероятность заболевания.

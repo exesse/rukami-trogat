@@ -5,11 +5,13 @@ import Image from "../../assets/remissia/2.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const pageTitle = "Выпадение волос";
 ---
 
-<Layout title="Выпадение волос - Руками Трогать">
-  <PostTitle>Выпадение волос</PostTitle>
-  <img src={Image.src} alt="Выпадение волос" class="mb-12 w-full" />
+<Layout title={pageTitle}>
+  <PostTitle>{pageTitle}</PostTitle>
+  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Побочным действием химиопрепаратов является аллопеция (выпадение волос), происходит это везде — в буквальном смысле. Надо сказать, что в некоторых местах отсутствие волос очень кстати.

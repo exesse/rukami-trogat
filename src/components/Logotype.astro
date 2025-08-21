@@ -4,12 +4,12 @@ const { asLink = false } = Astro.props;
 ---
 
 {asLink ? (
-  <a href="/" aria-label="На главную" class="flex items-center justify-center gap-2 2xl:min-w-[210px] focus:outline-none focus:ring-2 focus:ring-[#000]">
+  <a href="/" aria-label="На главную" class="flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#000]">
     <img src={logotype.src} alt="На главную — Руками Трогать" />
     <span class="whitespace-nowrap font-semibold">Руками Трогать</span>
   </a>
 ) : (
-  <div class="flex items-center justify-center gap-2 2xl:min-w-[210px]">
+  <div class="flex items-center justify-center gap-2">
     <img src={logotype.src} alt="Логотип Руками Трогать" />
     <span class="whitespace-nowrap font-semibold">Руками Трогать</span>
   </div>

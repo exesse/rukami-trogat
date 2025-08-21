@@ -5,11 +5,13 @@ import Image from "../../assets/remissia/16.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const pageTitle = "Сексуальная жизнь";
 ---
 
-<Layout title="Сексуальная жизнь - Руками Трогать">
-  <PostTitle>Сексуальная жизнь</PostTitle>
-  <img src={Image.src} alt="Сексуальная жизнь" class="mb-12 w-full" />
+<Layout title={pageTitle}>
+  <PostTitle>{pageTitle}</PostTitle>
+  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Лечение не является противопоказанием к сексуальной жизни.

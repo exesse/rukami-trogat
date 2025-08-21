@@ -5,11 +5,13 @@ import Image from "../../assets/postanovka/10.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Участие в клинических исследованиях";
 ---
 
-<Layout title="Участие в клинических исследованиях - Руками Трогать">
-  <PostTitle>Участие в клинических исследованиях</PostTitle>
-  <img src={Image.src} alt="Клинические исследования" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Ежедневно во всем мире проводится несколько тысяч испытаний новых препаратов и методов лечения. И у тебя есть возможность принять участие в одном из них, при условии соответствия диагноза и общего состояния.

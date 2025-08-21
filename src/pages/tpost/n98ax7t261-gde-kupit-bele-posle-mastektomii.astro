@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/9.png";
+
+const title = "Где купить белье после мастэктомии";
 ---
 
-<Layout title="Где купить белье после мастэктомии - Руками Трогать">
-  <PostTitle>Где купить белье после мастэктомии</PostTitle>
-  <img src={Image.src} alt="Где купить белье после мастэктомии" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Заранее скажем, что в идеале примерять белье на себе, ведь оно должно быть максимально комфортным. Но, конечно, это не всегда возможно, поэтому есть варианты заказкать белье онлайн.

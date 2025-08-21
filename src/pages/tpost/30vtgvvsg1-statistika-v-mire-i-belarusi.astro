@@ -5,11 +5,13 @@ import Image from "../../assets/posts/bel-statistika.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Статистика в мире и Беларуси";
 ---
 
-<Layout title="Статистика в мире и Беларуси - Руками Трогать">
-  <PostTitle>Статистика в мире и Беларуси</PostTitle>
-  <img src={Image.src} alt="Статистика в мире и Беларуси" class="mb-12" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12" />
   <PostTitleDescription>
     <h2 class="mb-5">
       В среднем, в Беларуси 15 женщин в день (!) узнают о диагнозе РМЖ.

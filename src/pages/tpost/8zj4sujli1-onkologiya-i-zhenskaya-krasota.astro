@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/14.png";
+
+const title = "Онкология и женская красота";
 ---
 
-<Layout title="Онкология и женская красота - Руками Трогать">
-  <PostTitle>Онкология и женская красота</PostTitle>
-  <img src={Image.src} alt="Онкология и женская красота" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Благодаря постоянному развитию медицинских технологий рак теперь не равен приговору. Победившие эту болезнь хотят улучшить качество жизни и идут к косметологам, чтобы восстановить кожу после лечения.<br />

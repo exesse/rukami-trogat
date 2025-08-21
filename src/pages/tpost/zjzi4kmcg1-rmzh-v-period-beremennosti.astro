@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/5.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "РМЖ в период беременности";
 ---
 
-<Layout title="РМЖ в период беременности - Руками Трогать">
-  <PostTitle>РМЖ в период беременности</PostTitle>
-  <img src={Image.src} alt="РМЖ в период беременности" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, мы искренне считаем, что вопрос беременности, а также вопрос сохранения твоих яйцеклеток — это исключительно личное дело каждой женщины, и любое из твоих решений мы поддерживаем.

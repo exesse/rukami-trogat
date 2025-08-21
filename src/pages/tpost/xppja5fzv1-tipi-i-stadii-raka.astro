@@ -5,10 +5,12 @@ import Image from "../../assets/postanovka/8.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Типы и стадии рака";
 ---
 
-<Layout title="Типы и стадии рака - Руками Трогать">
-  <PostTitle>Типы и стадии рака</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
   <img src={Image.src} alt="Типы и стадии рака" class="mb-12 w-full" />
   <PostTitleDescription>

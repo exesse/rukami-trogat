@@ -5,12 +5,14 @@ import Image from "../../assets/postanovka/15.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Иерархия медучереждений Беларуси";
 ---
 
-<Layout title='Иерархия медучереждений Беларуси - Руками Трогать'>
-  <PostTitle>Иерархия медучереждений Беларуси</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt="Иерархия медучереждений Беларуси" class="mb-12 w-full" />
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Во всей иерархии онкологических медицинских учреждений во главе стоит Государственное Учреждение Республиканский научно-практический Центр онкологии и медицинской радиологии им. Н.Н.АЛЕКСАНДРОВА по адресу: Республика Беларусь, Минский район, аг. Лесной.
@@ -20,8 +22,8 @@ import PostTitleDescription from "../../components/PostTitleDescription.astro";
     <Divider />
   </PostContentItem>
   <PostContentItem>
-    РНПЦ ОМР им. Н.Н.АЛЕКСАНДРОВА занимает первое место в рейтинге ведущих центров Беларуси. Опыт работы по диагностике и лечению более 60 лет. 
-    В Центре работает 10 доцентов, 12 профессоров, 25 докторов наук, 72 кандидата наук, академик Национальной 
+    РНПЦ ОМР им. Н.Н.АЛЕКСАНДРОВА занимает первое место в рейтинге ведущих центров Беларуси. Опыт работы по диагностике и лечению более 60 лет.
+    В Центре работает 10 доцентов, 12 профессоров, 25 докторов наук, 72 кандидата наук, академик Национальной
     академии наук Беларуси. Ссылка на сайт: <a class="underline decoration-solid hover:no-underline" href="https://omr.by/" target="_blank">https://omr.by/</a>.
   </PostContentItem>
   <PostContentItem>

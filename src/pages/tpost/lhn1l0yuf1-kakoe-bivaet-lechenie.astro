@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/4.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Какое бывает лечение";
 ---
 
-<Layout title="Какое бывает лечение - Руками Трогать">
-  <PostTitle>Какое бывает лечение</PostTitle>
-  <img src={Image.src} alt="Какое бывает лечение" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Назначение лечения и междисциплинарный метод

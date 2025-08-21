@@ -5,10 +5,12 @@ import Image from "../../assets/postanovka/9.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Методы диагностики, доступные в Беларуси";
 ---
 
-<Layout title='Методы диагностики, доступные в Беларуси - Руками Трогать'>
-  <PostTitle>Методы диагностики, доступные в Беларуси</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
   <img src={Image.src} alt="Методы диагностики, доступные в Беларуси" class="mb-12 w-full" />
   <PostTitleDescription>

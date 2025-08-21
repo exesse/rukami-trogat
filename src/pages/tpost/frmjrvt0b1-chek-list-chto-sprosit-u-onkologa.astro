@@ -5,10 +5,12 @@ import Image from "../../assets/postanovka/13.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Чек-лист \"Что спросить у онколога?\"";
 ---
 
-<Layout title='Чек-лист "Что спросить у онколога?" - Руками Трогать'>
-  <PostTitle>Чек-лист "Что спросить у онколога?"</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
   <img src={Image.src} alt="Что спросить у онколога?" class="mb-12 w-full" />
   <PostTitleDescription>

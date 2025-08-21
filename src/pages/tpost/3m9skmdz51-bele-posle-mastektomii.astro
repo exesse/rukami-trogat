@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/8.png";
+
+const pageTitle = "Белье после мастэктомии";
 ---
 
-<Layout title="Белье после мастэктомии - Руками Трогать">
-  <PostTitle>Белье после мастэктомии</PostTitle>
-  <img src={Image.src} alt="Белье после мастэктомии" class="mb-12 w-full" />
+<Layout title={pageTitle}>
+  <PostTitle>{pageTitle}</PostTitle>
+  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Если в результате операции удалили не только опухоль, но и молочную железу, тебе понадобится специальное белье.
@@ -95,5 +97,7 @@ import Image from "../../assets/remissia/8.png";
   </PostContentItem>
   <PostContentItem>
     <Divider />
-  </PostContentItem>
+
+
+</Layout>  </PostContentItem>  </PostContentItem>
 </Layout>

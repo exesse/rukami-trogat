@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/7.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Подготовка: что брать с собой в больницу. Чек-лист";
 ---
 
-<Layout title="Подготовка: что брать с собой в больницу. Чек-лист - Руками Трогать">
-  <PostTitle>Подготовка: что брать с собой в больницу. Чек-лист</PostTitle>
-  <img src={Image.src} alt="Подготовка: что брать с собой в больницу" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Собираясь в больницу, старайся не паниковать и попроси близких помочь тебе собраться. Ты можешь воспользоваться нашим списком и расширить его по своему пожеланию.

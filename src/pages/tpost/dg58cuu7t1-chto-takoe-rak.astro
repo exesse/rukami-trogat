@@ -5,11 +5,13 @@ import Image from "../../assets/posts/what-cancer.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Что такое рак";
 ---
 
-<Layout title="Что такое рак - Руками Трогать">
-  <PostTitle>Что такое рак</PostTitle>
-  <img src={Image.src} alt="Что такое рак" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">Привет, дорогая!</h2>
     <p>Начать мы хотим с самого главного сообщения!</p>

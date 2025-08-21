@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/13.png";
+
+const title = "Страх рецидива. Как справляться";
 ---
 
-<Layout title="Страх рецидива. Как справляться - Руками Трогать">
-  <PostTitle>Страх рецидива. Как справляться</PostTitle>
-  <img src={Image.src} alt="Страх рецидива. Как справляться" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Предлагаем тебе ознакомиться с серией видео-лекций, прочитанных психологом Инной Малаш на вебинаре для онкопациентов, который был организован Центром поддержки онкопациентов “Во имя жизни” – этот вебинар довольно широко раскрывает тему и может заменить тебе полноценные консультации дефицитного специалиста.<br />

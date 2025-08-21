@@ -5,11 +5,13 @@ import Image from "../../assets/remissia/17.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Равное консультирование";
 ---
 
-<Layout title="Равное консультирование - Руками Трогать">
-  <PostTitle>Равное консультирование</PostTitle>
-  <img src={Image.src} alt="Равное консультирование" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Твой опыт может помогать другим спасать их жизни!

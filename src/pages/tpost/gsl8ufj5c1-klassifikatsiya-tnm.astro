@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/3.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Классификация TNM";
 ---
 
-<Layout title="Классификация TNM - Руками Трогать">
-  <PostTitle>Классификация TNM</PostTitle>
-  <img src={Image.src} alt="Классификация TNM" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Международная TNM-Классификация и стадии опухоли

@@ -5,11 +5,13 @@ import Image from "../../assets/operacija/2.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Бесплатные и платные услуги";
 ---
 
-<Layout title="Бесплатные и платные услуги - Руками Трогать">
-  <PostTitle>Бесплатные и платные услуги</PostTitle>
-  <img src={Image.src} alt="Бесплатные и платные услуги" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       За что нужно платить и нужно ли вообще?

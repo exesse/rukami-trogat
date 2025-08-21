@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/12.png";
+
+const title = "Как тебе могут помочь родные";
 ---
 
-<Layout title="Как тебе могут помочь родные - Руками Трогать">
-  <PostTitle>Как тебе могут помочь родные</PostTitle>
-  <img src={Image.src} alt="Как тебе могут помочь родные" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Самый главный совет для родных онкопациента – это изменить свой стиль коммуникации и внимательно относиться к тому, что и как вы говорите своему родственнику, находящимся в болезненном состоянии или ремиссии.

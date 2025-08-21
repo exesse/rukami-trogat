@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/15.png";
+
+const title = "Работа";
 ---
 
-<Layout title="Работа - Руками Трогать">
-  <PostTitle>Работа</PostTitle>
-  <img src={Image.src} alt="Работа" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Отказываться ли от работы на время лечения или нет — решает каждый для себя сам. Здесь нужно смотреть по самочувствию, финансовому и семейному положению. Некоторым женщинам важно оставаться на работе в привычном ритме во время болезни, и многим это удается. Но кому-то лучше сделать паузу и восстановиться.

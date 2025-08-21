@@ -5,11 +5,13 @@ import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 import Image from "../../assets/remissia/6.png";
+
+const title = "Изменения в мышцах и нервах";
 ---
 
-<Layout title="Изменения в мышцах и нервах - Руками Трогать">
-  <PostTitle>Изменения в мышцах и нервах</PostTitle>
-  <img src={Image.src} alt="Изменения в мышцах и нервах" class="mb-12 w-full" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Неврологические последствия индивидуальны, кто-то испытывает дискомфорт только в процессе лечения, у кого-то проблемы остаются в ремиссии.

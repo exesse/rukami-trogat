@@ -5,11 +5,13 @@ import Image from "../../assets/posts/risks.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Факторы риска";
 ---
 
-<Layout title="Факторы риска - Руками Трогать">
-  <PostTitle>Факторы риска</PostTitle>
-  <img src={Image.src} alt="Факторы риска" class="mb-12" />
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
+  <img src={Image.src} alt={title} class="mb-12" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Быть женщиной — это уже фактор риска, согласно данным ВОЗ, каждая 8-я

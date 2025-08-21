@@ -5,10 +5,12 @@ import Image from "../../assets/posts/algorithm.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
+
+const title = "Алгоритм диагностирования и лечения";
 ---
 
-<Layout title="Алгоритм диагностирования и лечения - Руками Трогать">
-  <PostTitle>Алгоритм диагностирования и лечения</PostTitle>
+<Layout title={title}>
+  <PostTitle>{title}</PostTitle>
   <img
     src={Image.src}
     alt="Алгоритм диагностирования и лечения"
