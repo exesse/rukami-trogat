@@ -38,5 +38,4 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## TODO
 
 2. Review all pages. Change text formats. Make strong where it's really needed. Check h2-h6
-3. 950px width something goes wrong with images on menu pages
-4. Check lighthouse performance
+3. Check lighthouse performance
