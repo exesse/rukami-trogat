@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/remissia/2.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
-const pageTitle = "Выпадение волос";
+const title = "Выпадение волос";
+const description = "Выпадение волос как побочный эффект химиотерапии: как справиться, советы по уходу, татуаж бровей, поддержка и рекомендации для женщин с раком молочной железы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "выпадение волос, химиотерапия, аллопеция, уход, татуаж бровей, рак молочной железы, Беларусь, Руками Трогать";
+const shareImage = "/remissia/2.png";
+const pageUrl = "https://rykamitrogat.info/tpost/1zmcu8rz21-vipadenie-volos";
 ---
 
-<Layout title={pageTitle}>
-  <PostTitle>{pageTitle}</PostTitle>
-  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
+  <PostTitle>{title}</PostTitle>
+  <img src={shareImage} alt="Женщина с длинными рыжими волосами, завёрнутыми в полотенце, держит расчёску. Её чёрные ногти нежно обхватывают волосы, передавая ощущение спокойного, интимного момента." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Побочным действием химиопрепаратов является аллопеция (выпадение волос), происходит это везде — в буквальном смысле. Надо сказать, что в некоторых местах отсутствие волос очень кстати.

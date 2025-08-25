@@ -4,25 +4,34 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/10.png";
 
 const title = "Кому и зачем нужно носить рукав";
+const description = "Рекомендации по использованию компрессионного рукава после операции РМЖ: профилактика лимфедемы, ограничения, типы рукавов, советы по уходу и выбору.";
+const keywords = "компрессионный рукав, лимфедема, операция РМЖ, профилактика, рекомендации, уход, лимфолог";
+const shareImage = "/remissia/10.png";
+const pageUrl = "https://rykamitrogat.info/tpost/t1ixisnt61-komu-i-zachem-nuzhno-nosit-rukav";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план женщины в светло-коричневом топе с длинными рукавами и открытой спиной. Гладкая ткань контрастирует с кожей, создавая элегантный, современный образ." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       В большинстве случаев при операции РМЖ удаляют и регионарные лимфоузлы, с этим связан риск развития лимфатического отека (лимфедемы).
     </h2>
   </PostTitleDescription>
   <PostContentItem>
-      Отек при лимфедеме развивается из-за нарушения оттока жидкости по лимфатическим сосудам. Дебют лимфедемы может быть обусловлен инфекцией (например, <a href="https://www.krasotaimedicina.ru/diseases/infectious/erysipelas" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">рожистым воспалением</a>), травмой, ожогом, хирургическим вмешательством, связанным с удалением или повреждением лимфатических узлов.
-    </PostContentItem>
-    <PostContentItem>
-      <Divider />
-    </PostContentItem>
+    Отек при лимфедеме развивается из-за нарушения оттока жидкости по лимфатическим сосудам. Дебют лимфедемы может быть обусловлен инфекцией (например, <a href="https://www.krasotaimedicina.ru/diseases/infectious/erysipelas" target="_blank" rel="noopener" class="underline decoration-solid hover:no-underline">рожистым воспалением</a>), травмой, ожогом, хирургическим вмешательством, связанным с удалением или повреждением лимфатических узлов.
+  </PostContentItem>
+  <PostContentItem>
+    <Divider />
+  </PostContentItem>
   <PostContentItem>
     Необходимо ограничивать физическую нагрузку на пораженную конечность, <strong>не более 1 кг в первые полгода, не более 2 кг — всю жизнь.</strong> При выявлении лимфедемы на начальных стадиях в большинстве случаев можно не только остановить развитие заболевания, но и устранить уже имеющиеся проблемы, поэтому при первых признаках лимфедемы тебе следует обращаться к врачу.
   </PostContentItem>

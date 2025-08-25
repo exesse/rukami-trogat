@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/remissia/1.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Какие изменения тебя ждут и как к ним подготовиться";
+const description = "Какие изменения ждут после лечения рака молочной железы: внешние и внутренние, советы по подготовке, лайфхаки, поддержка. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "изменения после лечения, рак молочной железы, подготовка, советы, поддержка, Беларусь, Руками Трогать";
+const shareImage = "/remissia/1.png";
+const pageUrl = "https://rykamitrogat.info/tpost/nsnfva0rv1-kakie-izmeneniya-tebya-zhdut-i-kak-k-nim";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Человек в розовом платке и свитере пристально смотрит в камеру. Фон однотонно-розовый, создающий спокойную и сосредоточенную атмосферу." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, знай, что изменения коснутся кого-то в большей, кого-то в меньшей степени, но мы хотим, чтобы ты была к ним готова и имела под рукой практические советы и лайфхаки, как упростить себе жизнь или обновить свою новую ежедневную рутину.

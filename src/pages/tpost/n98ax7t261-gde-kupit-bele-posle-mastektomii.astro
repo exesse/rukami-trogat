@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/9.png";
 
 const title = "Где купить белье после мастэктомии";
+const description = "Список магазинов и брендов, где можно купить белье после мастэктомии в Минске и онлайн. Советы по выбору, примерке, возврату и лайфхаки для поиска подходящих моделей.";
+const keywords = "белье после мастэктомии, магазины, бренды, Минск, онлайн, выбор, примерка, возврат";
+const shareImage = "/remissia/9.png";
+const pageUrl = "https://rykamitrogat.info/tpost/n98ax7t261-gde-kupit-bele-posle-mastektomii";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="На бежевом фоне изображена женщина в бежевом послеоперационном компрессионном бюстгальтере. Бюстгальтер оснащен поддерживающей передней бретелькой и застежкой на крючки, что обеспечивает комфорт и поддержку." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Заранее скажем, что в идеале примерять белье на себе, ведь оно должно быть максимально комфортным. Но, конечно, это не всегда возможно, поэтому есть варианты заказкать белье онлайн.

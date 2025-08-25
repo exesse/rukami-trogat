@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/6.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Операция \"Анджелины Джоли\"";
+const description = "Профилактическая мастэктомия: показания, риски, рекомендации, опыт Анджелины Джоли и белорусские протоколы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "операция Анджелины Джоли, профилактическая мастэктомия, BRCA1, BRCA2, рак молочной железы, Беларусь, Руками Трогать";
+const shareImage = "/operacija/6.png";
+const pageUrl = "https://rykamitrogat.info/tpost/l8llo3tng1-operatsiya-andzhelini-dzholi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Анджелины Джоли с длинными каштановыми волосами и задумчивым выражением лица опирается подбородком на руку. На ней чёрный блейзер на мягком, светлом фоне." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Профилактическое удаление молочных желез существовало довольно давно, но всемирно известной эта операция стала после того, как ее сделала Анджелина Джоли, поскольку у нее была высокая вероятность заболевания.

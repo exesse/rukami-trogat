@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/posts/what-cancer.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Что такое рак";
+const description = "Что такое рак молочной железы, как он возникает, как развивается, какие методы лечения существуют. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "рак, рак молочной железы, причины, лечение, диагностика, метастазы, Руками Трогать";
+const shareImage = "/posts/what-cancer.png";
+const pageUrl = "https://rykamitrogat.info/tpost/dg58cuu7t1-chto-takoe-rak";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={keywords} alt="Увядший подсолнух на однотонном фоне со сморщенными зелеными листьями и увядшими желтыми лепестками вызывает ощущение упадка и ностальгии." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">Привет, дорогая!</h2>
     <p>Начать мы хотим с самого главного сообщения!</p>

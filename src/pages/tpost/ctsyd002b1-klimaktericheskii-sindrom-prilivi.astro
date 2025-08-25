@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/7.png";
 
 const title = "Климактерический синдром (приливы)";
+const description = "Причины, профилактика и рекомендации при климактерическом синдроме (приливы) у онкопациентов, принимающих тамоксифен. Советы по образу жизни и противопоказания.";
+const keywords = "климактерический синдром, приливы, тамоксифен, онкопациенты, профилактика, рекомендации, гормональная терапия";
+const shareImage = "/remissia/7.png";
+const pageUrl = "https://rykamitrogat.info/tpost/ctsyd002b1-klimaktericheskii-sindrom-prilivi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Из вулкана извергается лава, ярко-красные расплавленные породы вырываются на фоне тёмного, дымного неба. Сцена передает невероятный жар и природную мощь." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Прием тамоксифена может вызвать климактерический синдром (обычно его называют приливами).

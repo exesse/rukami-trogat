@@ -4,22 +4,30 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/14.png";
 
 const title = "Онкология и женская красота";
+const description = "Восстановление женской красоты после онкологического лечения: советы по уходу за кожей, ограничения и возможности косметологических процедур, рекомендации специалистов.";
+const keywords = "онкология, женская красота, косметология, восстановление, уход за кожей, процедуры, ограничения, рекомендации";
+const shareImage = "/remissia/14.png";
+const pageUrl = "https://rykamitrogat.info/tpost/8zj4sujli1-onkologiya-i-zhenskaya-krasota";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план подбородка и губ человека, рука которого нежно касается его шеи и линии подбородка, передавая самоанализ и спокойствие посредством мягкого освещения и естественной текстуры кожи." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Благодаря постоянному развитию медицинских технологий рак теперь не равен приговору. Победившие эту болезнь хотят улучшить качество жизни и идут к косметологам, чтобы восстановить кожу после лечения.<br />
     </h2>
-</PostTitleDescription>
-<PostContentItem>
-      Нельзя скрывать, что ты перенесла онкологическое заболевание и лучше посоветоваться и с врачом, и со специалистом по косметологии.
-
+  </PostTitleDescription>
+  <PostContentItem>
+    Нельзя скрывать, что ты перенесла онкологическое заболевание и лучше посоветоваться и с врачом, и со специалистом по косметологии.
   </PostContentItem>
   <PostContentItem>
     <Divider />
@@ -38,14 +46,8 @@ const title = "Онкология и женская красота";
   </PostContentItem>
   <PostContentItem>
     <ul class="list-disc pl-6">
-        <li>
-
-            недостаток качественных исследований безопасности и эффективности подобных процедур у перенесших лечение;<br />
-        </li>
-        <li>
-
-            недостаток общих знаний по данной проблеме (который, впрочем, активно устраняется благодаря тому, что на специализированных конгрессах специалисты-онкологи, хирурги и косметологи междисциплинарно обсуждают свой опыт).
-        </li>
+      <li>недостаток качественных исследований безопасности и эффективности подобных процедур у перенесших лечение;<br /></li>
+      <li>недостаток общих знаний по данной проблеме (который, впрочем, активно устраняется благодаря тому, что на специализированных конгрессах специалисты-онкологи, хирурги и косметологи междисциплинарно обсуждают свой опыт).</li>
     </ul>
   </PostContentItem>
   <PostContentItem>

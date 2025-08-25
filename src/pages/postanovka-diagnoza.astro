@@ -4,50 +4,63 @@ import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import PageNavigationList from "../components/PageNavigation/PageNavigationList.astro";
 import PageNavigationItem from "../components/PageNavigation/PageNavigationItem.astro";
-import Image1 from "../assets/postanovka/image_33.webp";
-import Image2 from "../assets/postanovka/Group_107.webp";
-import Image3 from "../assets/postanovka/pexels-cottonbro-stu.webp";
-import Image4 from "../assets/postanovka/4.webp";
-import Image5 from "../assets/postanovka/5.webp";
-import Image6 from "../assets/postanovka/pexels-tima-miroshni.webp";
-import Image7 from "../assets/postanovka/13.webp";
-import Image8 from "../assets/postanovka/8.webp";
-import Image9 from "../assets/postanovka/15.webp";
-import Image10 from "../assets/postanovka/9.webp";
-import Image11 from "../assets/postanovka/11.webp";
-import Image12 from "../assets/postanovka/14.webp";
-import Image13 from "../assets/postanovka/10.webp";
+import Image1 from "../../public/postanovka/image_33.webp";
+import Image2 from "../../public/postanovka/Group_107.webp";
+import Image3 from "../../public/postanovka/pexels-cottonbro-stu.webp";
+import Image4 from "../../public/postanovka/4.webp";
+import Image5 from "../../public/postanovka/5.webp";
+import Image6 from "../../public/postanovka/pexels-tima-miroshni.webp";
+import Image7 from "../../public/postanovka/13.webp";
+import Image8 from "../../public/postanovka/8.webp";
+import Image9 from "../../public/postanovka/15.webp";
+import Image10 from "../../public/postanovka/9.webp";
+import Image11 from "../../public/postanovka/11.webp";
+import Image12 from "../../public/postanovka/14.webp";
+import Image13 from "../../public/postanovka/10.webp";
+
+const title = "Постановка диагноза - Руками Трогать";
+const description = "Всё о диагностике, факторах риска, маршруте пациента и полезных контактах для женщин с раком молочной железы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "диагностика, постановка диагноза, рак молочной железы, факторы риска, маршруты, контакты, Руками Трогать, Беларусь";
+const shareImage = "/main/top-banner.png";
+const pageUrl = "https://rykamitrogat.info/postanovka-diagnoza";
 ---
 
-<Layout title="Постановка диагноза - Руками Трогать" hasBreadcrumbs={false}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+  hasBreadcrumbs={false}
+>
   <Section>
     <PageTitle>Постановка диагноза</PageTitle>
 
     <div class="space-y-6 text-[18px] leading-[26px]">
       <PageNavigationList>
         <PageNavigationItem
-          image={{ src: Image1.src, alt: "Что такое рак" }}
+          image={{ src: Image1.src, alt: "Увядший подсолнух на однотонном фоне со сморщенными зелеными листьями и увядшими желтыми лепестками вызывает ощущение упадка и ностальгии." }}
           link={{
             href: "/tpost/dg58cuu7t1-chto-takoe-rak",
             title: "Что такое рак",
           }}
         />
         <PageNavigationItem
-          image={{ src: Image2.src, alt: "Статистика в мире и Беларуси" }}
+          image={{ src: Image2.src, alt: "Простая иллюстрация восходящего линейного графика черного цвета с розовыми кругами и стрелкой на нежно-персиковом фоне, символизирующая рост и прогресс." }}
           link={{
             href: "/tpost/30vtgvvsg1-statistika-v-mire-i-belarusi",
             title: "Статистика в мире и Беларуси",
           }}
         />
         <PageNavigationItem
-          image={{ src: Image3.src, alt: "Факторы риска" }}
+          image={{ src: Image3.src, alt: "Крупный план загорелой, веснушчатой ​​спины и плеча женщины в красном купальнике на фоне ярко-голубой воды бассейна." }}
           link={{
             href: "/tpost/rxbvb1dsk1-faktori-riska",
             title: "Факторы риска",
           }}
         />
         <PageNavigationItem
-          image={{ src: Image4.src, alt: "Онкологический маршрут" }}
+          image={{ src: Image4.src, alt: "Вид с воздуха на каменистый пустынный ландшафт с красно-белыми полосами. Редкая растительность усеивает местность. Сцена создаёт ощущение засушливого одиночества." }}
           link={{
             href: "/tpost/8fkv901sj1-onkologicheskii-marshrut",
             title: "Онкологический маршрут",
@@ -56,7 +69,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image5.src,
-            alt: "Алгоритм диагностирования и лечения",
+            alt: "Крупный план статуи из белого мрамора с детальным жестом руки, расположенной у груди, передающей изящество и элегантность с помощью гладких, отполированных фактур.",
           }}
           link={{
             href: "/tpost/ukir3yyo71-algoritm-diagnostirovaniya-i-lecheniya",
@@ -66,7 +79,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image6.src,
-            alt: "Кто принимает участие в диагностировании",
+            alt: "Пожилая женщина-врач с короткими светлыми волосами, в очках, в белом халате и со стетоскопом, кажется заинтересованной во время видеозвонка, что демонстрирует ее профессионализм.",
           }}
           link={{
             href: "/tpost/d5hfo2dsj1-kto-prinimaet-uchastie-v-diagnostirovani",
@@ -76,7 +89,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image7.src,
-            alt: 'Чек лист "Что спросить у онколога"',
+            alt: 'Контрольный список на бежевом фоне с четырьмя розовыми флажками и линиями, символизирующий организованность и продуктивность. Каждый пункт отмечен галочкой.',
           }}
           link={{
             href: "/tpost/frmjrvt0b1-chek-list-chto-sprosit-u-onkologa",
@@ -84,7 +97,7 @@ import Image13 from "../assets/postanovka/10.webp";
           }}
         />
         <PageNavigationItem
-          image={{ src: Image8.src, alt: "Типы и стадии рака" }}
+          image={{ src: Image8.src, alt: "Руки держат чашку Петри с небольшими круглыми бактериальными культурами, разделёнными на четыре секции. Сцена создаёт научную и сосредоточенную атмосферу." }}
           link={{
             href: "/tpost/xppja5fzv1-tipi-i-stadii-raka",
             title: "Типы и стадии рака",
@@ -93,7 +106,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image9.src,
-            alt: "Иерархия медучереждений Беларуси",
+            alt: "Крупный план человека, надевающего синие одноразовые перчатки на нейтральном фоне, передающий ощущение готовности и заботы о чистоте.",
           }}
           link={{
             href: "/tpost/40mxvv9pa1-ierarhiya-meducherezhdenii-belarusi",
@@ -103,7 +116,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image10.src,
-            alt: "Методы диагностики, доступные в Беларуси",
+            alt: "Врач в белом халате настраивает медицинское оборудование рядом с пациентом в клинике. Нейтральные тона помещения создают спокойную и профессиональную атмосферу.",
           }}
           link={{
             href: "/tpost/5sn2kve151-metodi-diagnostiki-dostupnie-v-belarusi",
@@ -113,7 +126,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image11.src,
-            alt: "Контакты и полезные ссылки для онкопациентов",
+            alt: "Человек с бритой головой и серьгами-кольцами смотрит вверх с безмятежным выражением лица. На нём белая водолазка на однотонном фоне.",
           }}
           link={{
             href: "/tpost/zf6uy711m1-kontakti-i-poleznie-ssilki-dlya-onkopats",
@@ -121,7 +134,7 @@ import Image13 from "../assets/postanovka/10.webp";
           }}
         />
         <PageNavigationItem
-          image={{ src: Image12.src, alt: "Телефоны доверия в Беларуси" }}
+          image={{ src: Image12.src, alt: "Пастельно-розовая телефонная трубка, расположенная внутри мягкого белого сердца на персиковом фоне, символизирует общение и тепло. Тон нежный и ласковый." }}
           link={{
             href: "/tpost/9ldvuasdx1-telefoni-doveriya-v-belarusi",
             title: "Телефоны доверия в Беларуси",
@@ -130,7 +143,7 @@ import Image13 from "../assets/postanovka/10.webp";
         <PageNavigationItem
           image={{
             src: Image13.src,
-            alt: "Участие в клинических исследованиях",
+            alt: "Учёный в перчатках работает в лаборатории, держа чашку Петри с красной питательной средой и используя синий инструмент. На столе видны другие чашки.",
           }}
           link={{
             href: "/tpost/ebbechaue1-uchastie-v-klinicheskih-issledovaniyah",

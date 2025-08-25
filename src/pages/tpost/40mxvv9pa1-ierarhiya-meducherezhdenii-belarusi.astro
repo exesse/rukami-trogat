@@ -1,18 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/15.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Иерархия медучереждений Беларуси";
+const description = "Структура иерархии онкологических медицинских учреждений Беларуси: РНПЦ, областные и межрайонные диспансеры, кабинеты онколога. Контакты, ссылки, поддержка. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "иерархия, медучреждения, онкология, диспансер, Беларусь, РНПЦ, поддержка, Руками Трогать";
+const shareImage = "/postanovka/15.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/40mxvv9pa1-ierarhiya-meducherezhdenii-belarusi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план человека, надевающего синие одноразовые перчатки на нейтральном фоне, передающий ощущение готовности и заботы о чистоте." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Во всей иерархии онкологических медицинских учреждений во главе стоит Государственное Учреждение Республиканский научно-практический Центр онкологии и медицинской радиологии им. Н.Н.АЛЕКСАНДРОВА по адресу: Республика Беларусь, Минский район, аг. Лесной.

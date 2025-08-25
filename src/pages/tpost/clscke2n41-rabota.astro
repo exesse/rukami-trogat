@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/15.png";
 
 const title = "Работа";
+const description = "Работа во время лечения: советы по сохранению трудовой деятельности, права пациента, индивидуальный подход к решению, восстановление после операции и химиотерапии.";
+const keywords = "работа, лечение, химиотерапия, восстановление, права пациента, советы, поддержка";
+const shareImage = "/remissia/15.png";
+const pageUrl = "https://rykamitrogat.info/tpost/clscke2n41-rabota";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Пожилая женщина с короткими седыми волосами, в оранжевом кардигане, сидит за деревянным столом с чашкой кофе в руках и смотрит в ноутбук. Её окружают пышные зелёные растения." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Отказываться ли от работы на время лечения или нет — решает каждый для себя сам. Здесь нужно смотреть по самочувствию, финансовому и семейному положению. Некоторым женщинам важно оставаться на работе в привычном ритме во время болезни, и многим это удается. Но кому-то лучше сделать паузу и восстановиться.

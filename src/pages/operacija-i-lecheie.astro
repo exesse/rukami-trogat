@@ -4,113 +4,126 @@ import Section from "../components/Section.astro";
 import PageTitle from "../components/PageTitle.astro";
 import PageNavigationList from "../components/PageNavigation/PageNavigationList.astro";
 import PageNavigationItem from "../components/PageNavigation/PageNavigationItem.astro";
-import Image1 from "../assets/operacija/1.png";
-import Image2 from "../assets/operacija/2.png";
-import Image3 from "../assets/operacija/3.png";
-import Image4 from "../assets/operacija/4.png";
-import Image5 from "../assets/operacija/5.png";
-import Image6 from "../assets/operacija/6.png";
-import Image7 from "../assets/operacija/7.png";
-import Image8 from "../assets/operacija/8.png";
-import Image9 from "../assets/operacija/9.png";
-import Image10 from "../assets/operacija/10.png";
-import Image11 from "../assets/operacija/11.png";
-import Image12 from "../assets/operacija/12.png";
-import Image13 from "../assets/operacija/13.png";
+import Image1 from "../../public/operacija/1.png";
+import Image2 from "../../public/operacija/2.png";
+import Image3 from "../../public/operacija/3.png";
+import Image4 from "../../public/operacija/4.png";
+import Image5 from "../../public/operacija/5.png";
+import Image6 from "../../public/operacija/6.png";
+import Image7 from "../../public/operacija/7.png";
+import Image8 from "../../public/operacija/8.png";
+import Image9 from "../../public/operacija/9.png";
+import Image10 from "../../public/operacija/10.png";
+import Image11 from "../../public/operacija/11.png";
+import Image12 from "../../public/operacija/12.png";
+import Image13 from "../../public/operacija/13.png";
+
+const title = "Операция и лечение - Руками Трогать";
+const description = "Всё о хирургическом лечении, подготовке, восстановлении и побочных эффектах при раке молочной железы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "операция, лечение, рак молочной железы, восстановление, побочные эффекты, Руками Трогать, Беларусь";
+const shareImage = "/main/top-banner.png";
+const pageUrl = "https://rykamitrogat.info/operacija-i-lecheie";
 ---
 
-<Layout title="Операция и лечение - Руками Трогать" hasBreadcrumbs={false}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+  hasBreadcrumbs={false}
+>
   <Section>
     <PageTitle>Операция и лечение</PageTitle>
 
     <div class="space-y-6 text-[18px] leading-[26px]">
       <PageNavigationList>
         <PageNavigationItem
-          image={{ src: Image1.src, alt: "Протокол лечения" }}
+          image={{ src: Image1.src, alt: "Женщина-врач в белом халате со стетоскопом на шее сидит за столом. Она сосредоточенно смотрит на экран ноутбука, демонстрируя профессионализм и сосредоточенность." }}
           link={{
             href: "/tpost/ee7m50sju1-protokol-lecheniya",
             title: "Протокол лечения"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image2.src, alt: "Бесплатные и платные услуги" }}
+          image={{ src: Image2.src, alt: "Эмодзи руки, складывающей пальцы в корейский жест в виде сердца, в центре светло-бежевого овала на средне-бежевом фоне, выражает привязанность." }}
           link={{
             href: "/tpost/giv7fnnag1-besplatnie-i-platnie-uslugi",
             title: "Бесплатные и платные услуги"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image3.src, alt: "Классификация TNM" }}
+          image={{ src: Image3.src, alt: "Абстрактное произведение искусства с яркими оранжевыми и розовыми кластерами, напоминающими формы органических кораллов на сером фоне, передает динамичное, энергичное настроение." }}
           link={{
             href: "/tpost/gsl8ufj5c1-klassifikatsiya-tnm",
             title: "Классификация TNM"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image4.src, alt: "Какое бывает лечение" }}
+          image={{ src: Image4.src, alt: "Разнообразные таблетки и капсулы разных форм, размеров и цветов разбросаны на фиолетовом фоне, передавая ощущение медицинского разнообразия и выбора." }}
           link={{
             href: "/tpost/lhn1l0yuf1-kakoe-bivaet-lechenie",
             title: "Какое бывает лечение"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image5.src, alt: "РМЖ в период беременности" }}
+          image={{ src: Image5.src, alt: "Крупный план беременного живота, нежно поддерживаемого рукой, залитый мягким естественным светом. Изображение передает тепло, нежность и материнскую заботу." }}
           link={{
             href: "/tpost/zjzi4kmcg1-rmzh-v-period-beremennosti",
             title: "РМЖ в период беременности"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image6.src, alt: 'Операция "Анджелины Джоли"' }}
+          image={{ src: Image6.src, alt: 'Анджелины Джоли с длинными каштановыми волосами и задумчивым выражением лица опирается подбородком на руку. На ней чёрный блейзер на мягком, светлом фоне.' }}
           link={{
             href: "/tpost/l8llo3tng1-operatsiya-andzhelini-dzholi",
             title: 'Операция "Анджелины Джоли"'
           }}
         />
         <PageNavigationItem
-          image={{ src: Image7.src, alt: 'Подготовка: что брать с собой в больницу. Чек-лист' }}
+          image={{ src: Image7.src, alt: 'Простой контрольный список на бежевом фоне с четырьмя розовыми флажками и пустыми строками, передающий организацию и планирование в минималистичном стиле.' }}
           link={{
             href: "/tpost/8jbckafc11-podgotovka-chto-brat-s-soboi-v-bolnitsu",
             title: "Подготовка: что брать с собой в больницу. Чек-лист"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image8.src, alt: "Как близким поддержать тебя во время лечения" }}
+          image={{ src: Image8.src, alt: "Две женщины тепло обнимаются, одна из них в платке, выражая утешение и поддержку. Спокойная обстановка, мягкое освещение и нейтральные тона." }}
           link={{
             href: "/tpost/2yoa6r2y71-kak-blizkim-podderzhat-tebya-vo-vremya-l",
             title: "Как близким поддержать тебя во время лечения"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image9.src, alt: "Планируй время на больничный" }}
+          image={{ src: Image9.src, alt: "Розовый диван с пуговицами и современным торшером на бежевом фоне. Минималистичная и уютная обстановка создаёт ощущение тепла и комфорта." }}
           link={{
             href: "/tpost/0nrezu4ru1-planirui-vremya-na-bolnichnii",
             title: "Планируй время на больничный"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image10.src, alt: "Побочные эффекты. К чему быть готовой?" }}
+          image={{ src: Image10.src, alt: "Под облупившейся коричневой краской на стене проступают белые пятна, создающие абстрактный, фактурный узор. Изображение передаёт ощущение упадка и времени." }}
           link={{
             href: "/tpost/49zveicx21-pobochnie-effekti-k-chemu-bit-gotovoi",
             title: "Побочные эффекты. К чему быть готовой?"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image11.src, alt: "Лимфостаз" }}
+          image={{ src: Image11.src, alt: "Абстрактное изображение с плавными волнистыми формами в пастельных тонах розового, голубого и оранжевого. Мелкие пузырьки, разлетающиеся по поверхности, создают безмятежную, сказочную атмосферу." }}
           link={{
             href: "/tpost/hmy47kvti1-limfostaz",
             title: "Лимфостаз"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image12.src, alt: "Послеоперационный период" }}
+          image={{ src: Image12.src, alt: "Спокойная лысая женщина с закрытыми глазами поднимает руки на синем фоне. На ней серый топ; на руках видны медицинские пластыри и трубки." }}
           link={{
             href: "/tpost/2inij3idd1-posleoperatsionnii-period",
             title: "Послеоперационный период"
           }}
         />
         <PageNavigationItem
-          image={{ src: Image13.src, alt: "Наблюдение, сроки обследований" }}
+          image={{ src: Image13.src, alt: "Врач с бородой в белом халате просматривает документы в медицинском учреждении. На заднем плане — аппарат МРТ, что говорит о профессионализме." }}
           link={{
             href: "/tpost/yozi37xml1-nablyudenie-sroki-obsledovanii",
             title: "Наблюдение, сроки обследований"

@@ -20,9 +20,22 @@ import DropdownContent from "../components/Dropdown/DropdownContent.astro";
 import DropdownItem from "../components/Dropdown/DropdownItem.astro";
 import DropdownParagraph from "../components/Dropdown/DropdownParagraph.astro";
 import Player from "../components/Player.astro";
+
+const title = "Путь пациента";
+const description = "Вся необходимая информация о диагностике, лечении и жизни после рака молочной железы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "рак молочной железы, диагностика, лечение, ремиссия, поддержка, Руками Трогать, Беларусь";
+const shareImage = "/main/top-banner.png";
+const pageUrl = "https://rukami-trogat.by";
 ---
 
-<Layout title="Путь пациента" hasBreadcrumbs={false}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+  hasBreadcrumbs={false}
+>
   <Section>
     <HeroBanner />
   </Section>

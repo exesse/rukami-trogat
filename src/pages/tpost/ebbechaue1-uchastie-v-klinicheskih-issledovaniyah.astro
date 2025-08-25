@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/10.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Участие в клинических исследованиях";
+const description = "Как принять участие в клинических исследованиях, что такое протокол, кто может участвовать, как защищены участники, финансовые вопросы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "клинические исследования, участие, протокол, защита участников, фармкомпании, рак молочной железы, Беларусь, Руками Трогать";
+const shareImage = "/postanovka/10.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/ebbechaue1-uchastie-v-klinicheskih-issledovaniyah";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Учёный в перчатках работает в лаборатории, держа чашку Петри с красной питательной средой и используя синий инструмент. На столе видны другие чашки." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Ежедневно во всем мире проводится несколько тысяч испытаний новых препаратов и методов лечения. И у тебя есть возможность принять участие в одном из них, при условии соответствия диагноза и общего состояния.

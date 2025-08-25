@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/8.png";
 
 const pageTitle = "Белье после мастэктомии";
+const description = "Рекомендации по выбору компрессионного и ортопедического белья после мастэктомии. Как подобрать бюстгальтер, чтобы поддерживать форму груди и протезы, избежать осложнений и восстановить уверенность.";
+const keywords = "белье после мастэктомии, компрессионное белье, ортопедическое белье, бюстгальтер, протез, рекомендации, восстановление";
+const shareImage = "/remissia/8.png";
+const pageUrl = "https://rykamitrogat.info/tpost/3m9skmdz51-bele-posle-mastektomii";
 ---
 
-<Layout title={pageTitle}>
+<Layout
+  title={pageTitle}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{pageTitle}</PostTitle>
-  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
+  <img src={shareImage} alt="Человек с короткими волосами, стоящий в профиль, прижимает розовый бюстгальтер к обнаженной груди на простом светлом фоне, передавая уязвимость и самоанализ." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Если в результате операции удалили не только опухоль, но и молочную железу, тебе понадобится специальное белье.
@@ -97,7 +106,5 @@ const pageTitle = "Белье после мастэктомии";
   </PostContentItem>
   <PostContentItem>
     <Divider />
-
-
-</Layout>  </PostContentItem>  </PostContentItem>
+  </PostContentItem>
 </Layout>

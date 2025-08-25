@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/8.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Как близким поддержать тебя во время лечения";
+const description = "Советы и рекомендации для близких: как поддержать человека во время лечения рака молочной железы. Психологическая помощь, эмпатия, ресурсы и сообщества. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "поддержка, близкие, лечение, рак молочной железы, психологическая помощь, эмпатия, Руками Трогать, Беларусь";
+const shareImage = "/operacija/8.png";
+const pageUrl = "https://rykamitrogat.info/tpost/2yoa6r2y71-kak-blizkim-podderzhat-tebya-vo-vremya-l";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Две женщины тепло обнимаются, одна из них в платке, выражая утешение и поддержку. Спокойная обстановка, мягкое освещение и нейтральные тона." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Какие бы мы ни были, сильными и слабыми, первая реакция — это всегда шок. Родные и близкие, конечно, тоже расстроены, но в первые несколько недель после диагноза заболевшему раком совсем не до того, чтобы думать о чувствах окружающих.

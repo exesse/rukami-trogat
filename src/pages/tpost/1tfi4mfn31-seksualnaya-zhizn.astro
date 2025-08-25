@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/remissia/16.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
-const pageTitle = "Сексуальная жизнь";
+const title = "Сексуальная жизнь";
+const description = "Сексуальная жизнь после лечения рака молочной железы: советы, поддержка, интимные вопросы, комфорт, гормональная терапия, лубриканты. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "сексуальная жизнь, интим, рак молочной железы, лечение, поддержка, гормональная терапия, лубриканты, Беларусь, Руками Трогать";
+const shareImage = "/remissia/16.png";
+const pageUrl = "https://rykamitrogat.info/tpost/1tfi4mfn31-seksualnaya-zhizn";
 ---
 
-<Layout title={pageTitle}>
-  <PostTitle>{pageTitle}</PostTitle>
-  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
+  <PostTitle>{title}</PostTitle>
+  <img src={shareImage} alt={title} class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Лечение не является противопоказанием к сексуальной жизни.

@@ -1,19 +1,28 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/posts/algorithm.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Алгоритм диагностирования и лечения";
+const description = "Этапы диагностики и лечения рака молочной железы: постановка диагноза, определение стадии, выбор тактики, важность второго мнения. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "алгоритм диагностики, лечение, рак молочной железы, этапы, второе мнение, Беларусь, Руками Трогать";
+const shareImage = "/posts/algorithm.png";
+const pageUrl = "https://rykamitrogat.info/tpost/ukir3yyo71-algoritm-diagnostirovaniya-i-lecheniya";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <img
-    src={Image.src}
-    alt="Алгоритм диагностирования и лечения"
+    src={shareImage}
+    alt="Крупный план статуи из белого мрамора с детальным жестом руки, расположенной у груди, передающей изящество и элегантность с помощью гладких, отполированных фактур."
     class="mb-12 w-full"
   />
   <PostTitleDescription>

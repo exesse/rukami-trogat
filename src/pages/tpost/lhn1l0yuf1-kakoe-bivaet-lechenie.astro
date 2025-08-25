@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/4.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Какое бывает лечение";
+const description = "Виды лечения рака молочной железы: хирургия, химиотерапия, лучевая, таргетная, гормоно- и иммунотерапия. Подходы, этапы, рекомендации. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "лечение, рак молочной железы, хирургия, химиотерапия, таргетная терапия, гормонотерапия, иммунотерапия, Беларусь, Руками Трогать";
+const shareImage = "/operacija/4.png";
+const pageUrl = "https://rykamitrogat.info/tpost/lhn1l0yuf1-kakoe-bivaet-lechenie";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Разнообразные таблетки и капсулы разных форм, размеров и цветов разбросаны на фиолетовом фоне, передавая ощущение медицинского разнообразия и выбора." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Назначение лечения и междисциплинарный метод

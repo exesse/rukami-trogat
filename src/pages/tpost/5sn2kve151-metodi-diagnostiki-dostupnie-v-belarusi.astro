@@ -1,18 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/9.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Методы диагностики, доступные в Беларуси";
+const description = "Все современные методы диагностики рака молочной железы, доступные в Беларуси: осмотр, лучевые, биопсия, морфология, генетика. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "методы диагностики, рак молочной железы, Беларусь, осмотр, лучевые методы, биопсия, морфология, генетика, Руками Трогать";
+const shareImage = "/postanovka/9.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/5sn2kve151-metodi-diagnostiki-dostupnie-v-belarusi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt="Методы диагностики, доступные в Беларуси" class="mb-12 w-full" />
+  <img src={shareImage} alt="Врач в белом халате настраивает медицинское оборудование рядом с пациентом в клинике. Нейтральные тона помещения создают спокойную и профессиональную атмосферу." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       В Беларуси уровень лечения онкологических заболеваний достаточно высокий и на сегодняшний день тебе доступны все виды комплексной диагностики.

@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/14.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Телефоны доверия для экстренной психологической помощи";
+const description = "Круглосуточные телефоны доверия для экстренной психологической помощи по регионам Беларуси. Контакты, поддержка, помощь. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "телефоны доверия, психологическая помощь, экстренная помощь, Беларусь, онкология, поддержка, Руками Трогать";
+const shareImage = "/postanovka/14.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/9ldvuasdx1-telefoni-doveriya-v-belarusi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Пастельно-розовая телефонная трубка, расположенная внутри мягкого белого сердца на персиковом фоне, символизирует общение и тепло. Тон нежный и ласковый." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Информация о круглосуточных телефонах доверия для оказания экстренной психологической помощи, размещенная на сайте РНПЦ им. Александрова.

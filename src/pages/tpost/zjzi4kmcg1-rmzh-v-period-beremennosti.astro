@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/5.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "РМЖ в период беременности";
+const description = "Рак молочной железы и беременность: протоколы, лечение, обследования, решения, поддержка. Официальные рекомендации, этапы, риски. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "рак молочной железы, беременность, лечение, протокол, обследование, Беларусь, Руками Трогать";
+const shareImage = "/operacija/5.png";
+const pageUrl = "https://rykamitrogat.info/tpost/zjzi4kmcg1-rmzh-v-period-beremennosti";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план беременного живота, нежно поддерживаемого рукой, залитый мягким естественным светом. Изображение передает тепло, нежность и материнскую заботу." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, мы искренне считаем, что вопрос беременности, а также вопрос сохранения твоих яйцеклеток — это исключительно личное дело каждой женщины, и любое из твоих решений мы поддерживаем.

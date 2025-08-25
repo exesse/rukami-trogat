@@ -1,18 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/13.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Чек-лист \"Что спросить у онколога?\"";
+const description = "Список важных вопросов для онколога: диагностика, лечение, риски, побочные эффекты, репродуктивные функции, образ жизни, питание, обследования. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "чек-лист, вопросы онкологу, диагностика, лечение, рак молочной железы, Беларусь, Руками Трогать";
+const shareImage = "/postanovka/13.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/frmjrvt0b1-chek-list-chto-sprosit-u-onkologa";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt="Что спросить у онколога?" class="mb-12 w-full" />
+  <img src={shareImage} alt="Контрольный список на бежевом фоне с четырьмя розовыми флажками и линиями, символизирующий организованность и продуктивность. Каждый пункт отмечен галочкой." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, это очень важный этап! Он сэкономит тебе и специалистам много времени в будущем и поможет избежать недопониманий.

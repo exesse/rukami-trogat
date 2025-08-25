@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/7.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Подготовка: что брать с собой в больницу. Чек-лист";
+const description = "Чек-лист для подготовки к операции: что взять с собой в больницу при лечении рака молочной железы. Практические советы, список вещей, поддержка. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "подготовка, больница, чек-лист, операция, рак молочной железы, вещи, советы, Руками Трогать, Беларусь";
+const shareImage = "/operacija/7.png";
+const pageUrl = "https://rykamitrogat.info/tpost/8jbckafc11-podgotovka-chto-brat-s-soboi-v-bolnitsu";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Простой контрольный список на бежевом фоне с четырьмя розовыми флажками и пустыми строками, передающий организацию и планирование в минималистичном стиле." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Собираясь в больницу, старайся не паниковать и попроси близких помочь тебе собраться. Ты можешь воспользоваться нашим списком и расширить его по своему пожеланию.

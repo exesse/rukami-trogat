@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/12.png";
 
 const title = "Как тебе могут помочь родные";
+const description = "Рекомендации для родных онкопациента: как поддерживать, что говорить, как помогать, важность искренности, терпения, ненавязчивости и конкретной помощи.";
+const keywords = "помощь родных, поддержка, онкопациент, советы, стресс, коммуникация, рекомендации";
+const shareImage = "/remissia/12.png";
+const pageUrl = "https://rykamitrogat.info/tpost/ngkb4ivjm1-kak-tebe-mogut-pomoch-rodnie";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Пожилая пара тепло улыбается, мужчина нежно обнимает женщину сзади. Они излучают счастье и нежность на фоне однотонной фотографии." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Самый главный совет для родных онкопациента – это изменить свой стиль коммуникации и внимательно относиться к тому, что и как вы говорите своему родственнику, находящимся в болезненном состоянии или ремиссии.

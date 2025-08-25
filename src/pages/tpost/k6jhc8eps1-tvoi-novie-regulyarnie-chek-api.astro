@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/11.png";
 
 const title = "Твои новые регулярные чек-апы";
+const description = "Рекомендации по регулярным обследованиям после лечения рака: сроки, объем, наблюдение, контроль за состоянием, советы по индивидуальным показаниям и побочным эффектам.";
+const keywords = "чек-ап, обследование, рак, лечение, наблюдение, тамоксифен, маммография, УЗИ, денситометрия";
+const shareImage = "/remissia/11.png";
+const pageUrl = "https://rykamitrogat.info/tpost/k6jhc8eps1-tvoi-novie-regulyarnie-chek-api";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Руки держат набор пробирок с зелёными и оранжевыми жидкостями на белом фоне. Сцена создаёт научный, исследовательский тон." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, все очень индивидуально, мы рекомендуем тебе самостоятельно контролировать действия, согласно Протокола, вероятно, придется добавить что-то еще по индивидуальным показаниям (гормнональный фон, другие хронические заболевания).
@@ -42,7 +51,13 @@ const title = "Твои новые регулярные чек-апы";
     Женщинам, принимающим ингибиторы ароматазы, с целью контроля за плотностью костной ткани рекомендуется <strong>1 раз в 2 года</strong> выполнять денситометрию.
   </PostContentItem>
   <PostContentItem>
-    В случае появления признаков развития лимфедемы необходима консультация врача-лимфолога.
+
+
+
+
+
+
+</Layout>  </PostContentItem>    <Divider />  <PostContentItem>  </PostContentItem>    В случае появления признаков развития лимфедемы необходима консультация врача-лимфолога.    В случае появления признаков развития лимфедемы необходима консультация врача-лимфолога.
   </PostContentItem>
   <PostContentItem>
     <Divider />

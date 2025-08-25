@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/remissia/17.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Равное консультирование";
+const description = "Что такое равное консультирование, как опыт переживших диагноз помогает другим, преимущества поддержки от равных консультантов, и где найти такие сообщества.";
+const keywords = "равное консультирование, поддержка, опыт, диагноз, пациентское сообщество, эмоциональная помощь, Беларусь";
+const shareImage = "/remissia/17.png";
+const pageUrl = "https://rykamitrogat.info/tpost/c2m6k6vre1-ravnoe-konsultirovanie";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Двое сидят в креслах и ведут беседу. Один держит жёлтый блокнот. Оба выглядят расслабленными и улыбаются. Тёплая, деловая обстановка." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Твой опыт может помогать другим спасать их жизни!

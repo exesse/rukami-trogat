@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/posts/risks.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Факторы риска";
+const description = "Факторы риска рака молочной железы: на что можно и нельзя повлиять, советы по профилактике, влияние образа жизни и генетики. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "факторы риска, рак молочной железы, профилактика, образ жизни, генетика, Беларусь, Руками Трогать";
+const shareImage = "/posts/risks.png";
+const pageUrl = "https://rykamitrogat.info/tpost/rxbvb1dsk1-faktori-riska";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12" />
+  <img src={shareImage} alt="Крупный план загорелой, веснушчатой ​​спины и плеча женщины в красном купальнике на фоне ярко-голубой воды бассейна." class="mb-12" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Быть женщиной — это уже фактор риска, согласно данным ВОЗ, каждая 8-я

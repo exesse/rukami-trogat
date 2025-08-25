@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/6.png";
 
 const title = "Изменения в мышцах и нервах";
+const description = "Неврологические последствия лечения: периферические невропатии, симптомы, типы повреждений, методы купирования и важность взаимодействия специалистов.";
+const keywords = "мышцы, нервы, невропатия, химиотерапия, неврологические последствия, лечение, симптомы, восстановление";
+const shareImage = "/remissia/6.png";
+const pageUrl = "https://rykamitrogat.info/tpost/l3y43zcpc1-izmeneniya-v-mishtsah-i-nervah";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план шеи и плеча пожилого человека. Мягкое освещение подчеркивает морщины и веснушки. Спокойный тон, отражающий естественное старение." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Неврологические последствия индивидуальны, кто-то испытывает дискомфорт только в процессе лечения, у кого-то проблемы остаются в ремиссии.

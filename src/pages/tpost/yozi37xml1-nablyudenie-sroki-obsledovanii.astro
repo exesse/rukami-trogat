@@ -4,14 +4,23 @@ import PostTitle from '../../components/PostTitle.astro'
 import Divider from '../../components/Divider.astro'
 import PostContentItem from '../../components/PostContentItem.astro'
 import PostTitleDescription from '../../components/PostTitleDescription.astro'
-import Image from '../../assets/operacija/13.png'
 
 const title = "Наблюдение, сроки обследований";
+const description = "Как часто и какие обследования нужны после операции при раке молочной железы: официальные рекомендации, протоколы, контроль, советы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "наблюдение, сроки обследований, рак молочной железы, протокол, рекомендации, Беларусь, Руками Трогать";
+const shareImage = "/operacija/13.png";
+const pageUrl = "https://rykamitrogat.info/tpost/yozi37xml1-nablyudenie-sroki-obsledovanii";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Врач с бородой в белом халате просматривает документы в медицинском учреждении. На заднем плане — аппарат МРТ, что говорит о профессионализме." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Как часто и какие обследования нужны после операции? Официальные рекомендации и протоколы.

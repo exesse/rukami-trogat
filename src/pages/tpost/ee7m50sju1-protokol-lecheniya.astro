@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/1.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Протокол лечения";
+const description = "Официальный клинический протокол лечения онкологических заболеваний в Беларуси. Документ, рекомендации, ссылки, поддержка. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "протокол лечения, онкология, рак молочной железы, Беларусь, рекомендации, Руками Трогать";
+const shareImage = "/operacija/1.png";
+const pageUrl = "https://rykamitrogat.info/tpost/ee7m50sju1-protokol-lecheniya";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Женщина-врач в белом халате со стетоскопом на шее сидит за столом. Она сосредоточенно смотрит на экран ноутбука, демонстрируя профессионализм и сосредоточенность." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       На сегодняшний день в Беларуси утвержден официальный документ, который описывает лечение онкологических заболеваний.

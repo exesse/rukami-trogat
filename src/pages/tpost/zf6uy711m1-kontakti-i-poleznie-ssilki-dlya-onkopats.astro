@@ -1,18 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/11.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Контакты и полезные ссылки для онкопациентов";
+const description = "Список полезных ресурсов, сообществ, Instagram-аккаунтов, Telegram-каналов и Viber-групп для поддержки онкопациентов. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "контакты, полезные ссылки, онкопациенты, поддержка, сообщества, ресурсы, Беларусь, Руками Трогать";
+const shareImage = "/postanovka/11.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/zf6uy711m1-kontakti-i-poleznie-ssilki-dlya-onkopats";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt="Контакты и полезные ссылки для онкопациентов" class="mb-12 w-full" />
+  <img src={shareImage} alt="Человек с бритой головой и серьгами-кольцами смотрит вверх с безмятежным выражением лица. На нём белая водолазка на однотонном фоне." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, мы собрали для тебя список сайтов и сервисов, где ты сможешь найти больше информации, начать самообразовываться по теме онкологии, а также найдешь единомышленников и поддерживающие сообщества.

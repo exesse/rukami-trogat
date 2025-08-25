@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/9.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
-const pageTitle = "Планируй время на больничный"
+const title = "Планируй время на больничный";
+const description = "Всё о больничном листе, сроках, правилах оформления и восстановлении после лечения рака молочной железы. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "больничный, оформление, восстановление, рак молочной железы, лечение, Руками Трогать, Беларусь";
+const shareImage = "/operacija/9.png";
+const pageUrl = "https://rykamitrogat.info/tpost/0nrezu4ru1-planirui-vremya-na-bolnichnii";
 ---
 
-<Layout title={pageTitle}>
-  <PostTitle>{pageTitle}</PostTitle>
-  <img src={Image.src} alt={pageTitle} class="mb-12 w-full" />
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
+  <PostTitle>{title}</PostTitle>
+  <img src={shareImage} alt="Розовый диван с пуговицами и современным торшером на бежевом фоне. Минималистичная и уютная обстановка создаёт ощущение тепла и комфорта." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Дорогая, сейчас как никогда важно поставить себя на первое место и осознать, что путь лечения будет нескорый.

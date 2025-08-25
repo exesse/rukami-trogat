@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/posts/bel-statistika.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Статистика в мире и Беларуси";
+const description = "Актуальная статистика по раку молочной железы в мире и Беларуси: заболеваемость, динамика, факторы, выздоровление. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "статистика, рак молочной железы, заболеваемость, Беларусь, мир, выздоровление, Руками Трогать";
+const shareImage = "/posts/bel-statistika.png";
+const pageUrl = "https://rykamitrogat.info/tpost/30vtgvvsg1-statistika-v-mire-i-belarusi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12" />
+  <img src={shareImage} alt="Простая иллюстрация восходящего линейного графика черного цвета с розовыми кругами и стрелкой на нежно-персиковом фоне, символизирующая рост и прогресс." class="mb-12" />
   <PostTitleDescription>
     <h2 class="mb-5">
       В среднем, в Беларуси 15 женщин в день (!) узнают о диагнозе РМЖ.

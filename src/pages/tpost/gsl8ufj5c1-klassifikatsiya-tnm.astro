@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/3.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Классификация TNM";
+const description = "Международная TNM-классификация стадий рака молочной железы: расшифровка, значения, примеры, рекомендации. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "TNM, классификация, стадии рака, рак молочной железы, онкология, метастазы, лечение, Руками Трогать, Беларусь";
+const shareImage = "/operacija/3.png";
+const pageUrl = "https://rykamitrogat.info/tpost/gsl8ufj5c1-klassifikatsiya-tnm";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Абстрактное произведение искусства с яркими оранжевыми и розовыми кластерами, напоминающими формы органических кораллов на сером фоне, передает динамичное, энергичное настроение." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Международная TNM-Классификация и стадии опухоли

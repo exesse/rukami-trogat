@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/posts/map.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Онкологический маршрут";
+const description = "Что такое онкологический маршрут: этапы, план лечения, медицинская помощь, психологическая поддержка, реабилитация. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "онкологический маршрут, лечение, рак молочной железы, диагностика, реабилитация, психологическая поддержка, Беларусь, Руками Трогать";
+const shareImage = "/posts/map.png";
+const pageUrl = "https://rykamitrogat.info/tpost/8fkv901sj1-onkologicheskii-marshrut";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Вид с воздуха на каменистый пустынный ландшафт с красно-белыми полосами. Редкая растительность усеивает местность. Сцена создаёт ощущение засушливого одиночества." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Онкологический маршрут — это твой план лечения и медицинской помощи при

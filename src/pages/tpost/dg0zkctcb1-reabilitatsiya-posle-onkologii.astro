@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/3.png"; // TODO замените на актуальное изображение
 
 const title = "Реабилитация после онкологии";
+const description = "Комплексная реабилитация после онкологического лечения: физкультура, витамины, восстановление когнитивных функций, профилактика остеопороза, психотерапия и поддержка.";
+const keywords = "реабилитация, онкология, восстановление, ЛФК, витамины, когнитивные функции, остеопороз, психотерапия";
+const shareImage = "/remissia/3.png";
+const pageUrl = "https://rykamitrogat.info/tpost/dg0zkctcb1-reabilitatsiya-posle-onkologii";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Пожилая женщина с короткими седыми волосами стоит снаружи, держа коврик для йоги, в серой футболке. Она выглядит уверенной и спокойной на фоне зелени." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       К сожалению, в нашей стране не принято уделять должное внимание реабилитации после лечения. Врачи-онкологи редко говорят своим пациенткам о том, что реабилитация нужна и даже показана, ведь их «зона ответственности» ограничивается лечением основного заболевания, а для периода после нужны другие специалисты, и их в Беларуси несравнимо мало по отношению к количеству онко-пациентов.
@@ -21,7 +30,7 @@ const title = "Реабилитация после онкологии";
     <Divider />
   </PostContentItem>
   <PostContentItem>
-      Реабилитация после любого онкологического заболевания предполагает комплексный подход и непрерывность. Иными словами, для успешного восстановления после онкологии необходимо использовать различные методы активной реабилитации и придерживаться системного подхода.
+    Реабилитация после любого онкологического заболевания предполагает комплексный подход и непрерывность. Иными словами, для успешного восстановления после онкологии необходимо использовать различные методы активной реабилитации и придерживаться системного подхода.
   </PostContentItem>
   <PostContentItem>
     Реабилитация после онкологии включает в себя следующие направления:

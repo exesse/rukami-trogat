@@ -1,18 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/postanovka/8.webp";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Типы и стадии рака";
+const description = "Типы и стадии рака молочной железы: преинвазивный, инвазивный, молекулярные подтипы, диагностика, определение протокола лечения. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "типы рака, стадии рака, молочная железа, диагностика, лечение, подтипы, Беларусь, Руками Трогать";
+const shareImage = "/postanovka/8.webp";
+const pageUrl = "https://rykamitrogat.info/tpost/xppja5fzv1-tipi-i-stadii-raka";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
   <!-- TODO: reduce size of image. image too big -->
-  <img src={Image.src} alt="Типы и стадии рака" class="mb-12 w-full" />
+  <img src={shareImage} alt="Руки держат чашку Петри с небольшими круглыми бактериальными культурами, разделёнными на четыре секции. Сцена создаёт научную и сосредоточенную атмосферу." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Стадия болезни определяется в зависимости от размера опухоли, от того, есть ли опухолевые клетки в лимфатических узлах и метастазы в других органах.

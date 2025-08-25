@@ -1,17 +1,26 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PostTitle from "../../components/PostTitle.astro";
-import Image from "../../assets/operacija/2.png";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
 
 const title = "Бесплатные и платные услуги";
+const description = "Какие медицинские услуги при лечении рака молочной железы в Беларуси бесплатны, а за что нужно платить? Советы, контакты, гайд по обследованиям, лекарства, импланты, поддержка. Руками Трогать — поддержка, опыт, советы.";
+const keywords = "бесплатные услуги, платные услуги, онкология, рак молочной железы, обследования, лекарства, импланты, Беларусь, Руками Трогать";
+const shareImage = "/operacija/2.png";
+const pageUrl = "https://rykamitrogat.info/tpost/giv7fnnag1-besplatnie-i-platnie-uslugi";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Эмодзи руки, складывающей пальцы в корейский жест в виде сердца, в центре светло-бежевого овала на средне-бежевом фоне, выражает привязанность." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       За что нужно платить и нужно ли вообще?

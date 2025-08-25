@@ -4,14 +4,23 @@ import PostTitle from "../../components/PostTitle.astro";
 import Divider from "../../components/Divider.astro";
 import PostContentItem from "../../components/PostContentItem.astro";
 import PostTitleDescription from "../../components/PostTitleDescription.astro";
-import Image from "../../assets/remissia/5.png";
 
 const title = "Изменение веса";
+const description = "Причины изменения веса во время лечения: влияние препаратов, химиотерапии и гормональной терапии, советы по питанию и контролю веса для онкопациентов.";
+const keywords = "изменение веса, химиотерапия, гормональная терапия, тамоксифен, питание, восстановление, онкопациенты";
+const shareImage = "/remissia/5.png";
+const pageUrl = "https://rykamitrogat.info/tpost/czmd3iz591-izmenenie-vesa";
 ---
 
-<Layout title={title}>
+<Layout
+  title={title}
+  description={description}
+  keywords={keywords}
+  shareImage={shareImage}
+  pageUrl={pageUrl}
+>
   <PostTitle>{title}</PostTitle>
-  <img src={Image.src} alt={title} class="mb-12 w-full" />
+  <img src={shareImage} alt="Крупный план торса человека на тёмно-синем фоне. На нём тёмно-синие шорты, за пояс заткнут букет синих гортензий." class="mb-12 w-full" />
   <PostTitleDescription>
     <h2 class="mb-5">
       Есть стереотип, что при тяжелой болезни и сложном лечении пациентка должна похудеть. Но это не всегда так.
