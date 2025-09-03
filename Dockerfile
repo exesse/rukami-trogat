@@ -19,6 +19,5 @@ RUN npm install --omit=dev
 
 EXPOSE 4321
 
-CMD ["node", "./node_modules/.bin/astro", "preview", "--host", "0.0.0.0"]
-
+CMD ["node", "./dist/server/entry.mjs"]
 
